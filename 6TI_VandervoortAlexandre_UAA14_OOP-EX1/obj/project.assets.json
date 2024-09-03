@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\220857\\Downloads\\UAA14\\6TTI_VandervoortAlexandre_UAA14MiseEnRouteEx2\\6TTI_VandervoortAlexandre_UAA14MiseEnRouteEx2.csproj",
-      "projectName": "6TTI_VandervoortAlexandre_UAA14MiseEnRouteEx2",
-      "projectPath": "C:\\Users\\220857\\Downloads\\UAA14\\6TTI_VandervoortAlexandre_UAA14MiseEnRouteEx2\\6TTI_VandervoortAlexandre_UAA14MiseEnRouteEx2.csproj",
+      "projectUniqueName": "C:\\Users\\220857\\Downloads\\UAA14\\6TI_VandervoortAlexandre_UAA14_OOP-EX1\\6TI_VandervoortAlexandre_UAA14_OOP-EX1.csproj",
+      "projectName": "6TI_VandervoortAlexandre_UAA14_OOP-EX1",
+      "projectPath": "C:\\Users\\220857\\Downloads\\UAA14\\6TI_VandervoortAlexandre_UAA14_OOP-EX1\\6TI_VandervoortAlexandre_UAA14_OOP-EX1.csproj",
       "packagesPath": "C:\\Users\\220857\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\220857\\Downloads\\UAA14\\6TTI_VandervoortAlexandre_UAA14MiseEnRouteEx2\\obj\\",
+      "outputPath": "C:\\Users\\220857\\Downloads\\UAA14\\6TI_VandervoortAlexandre_UAA14_OOP-EX1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\220857\\AppData\\Roaming\\NuGet\\NuGet.Config",

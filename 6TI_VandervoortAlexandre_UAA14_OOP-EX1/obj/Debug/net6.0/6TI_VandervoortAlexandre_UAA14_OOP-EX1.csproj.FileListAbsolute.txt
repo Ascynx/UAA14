@@ -1,0 +1,15 @@
+C:\Users\220857\Downloads\UAA14\6TI_VandervoortAlexandre_UAA14_OOP-EX1\bin\Debug\net6.0\6TI_VandervoortAlexandre_UAA14_OOP-EX1.exe
+C:\Users\220857\Downloads\UAA14\6TI_VandervoortAlexandre_UAA14_OOP-EX1\bin\Debug\net6.0\6TI_VandervoortAlexandre_UAA14_OOP-EX1.deps.json
+C:\Users\220857\Downloads\UAA14\6TI_VandervoortAlexandre_UAA14_OOP-EX1\bin\Debug\net6.0\6TI_VandervoortAlexandre_UAA14_OOP-EX1.runtimeconfig.json
+C:\Users\220857\Downloads\UAA14\6TI_VandervoortAlexandre_UAA14_OOP-EX1\bin\Debug\net6.0\6TI_VandervoortAlexandre_UAA14_OOP-EX1.dll
+C:\Users\220857\Downloads\UAA14\6TI_VandervoortAlexandre_UAA14_OOP-EX1\bin\Debug\net6.0\6TI_VandervoortAlexandre_UAA14_OOP-EX1.pdb
+C:\Users\220857\Downloads\UAA14\6TI_VandervoortAlexandre_UAA14_OOP-EX1\obj\Debug\net6.0\6TI_VandervoortAlexandre_UAA14_OOP-EX1.csproj.AssemblyReference.cache
+C:\Users\220857\Downloads\UAA14\6TI_VandervoortAlexandre_UAA14_OOP-EX1\obj\Debug\net6.0\6TI_VandervoortAlexandre_UAA14_OOP-EX1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\220857\Downloads\UAA14\6TI_VandervoortAlexandre_UAA14_OOP-EX1\obj\Debug\net6.0\6TI_VandervoortAlexandre_UAA14_OOP-EX1.AssemblyInfoInputs.cache
+C:\Users\220857\Downloads\UAA14\6TI_VandervoortAlexandre_UAA14_OOP-EX1\obj\Debug\net6.0\6TI_VandervoortAlexandre_UAA14_OOP-EX1.AssemblyInfo.cs
+C:\Users\220857\Downloads\UAA14\6TI_VandervoortAlexandre_UAA14_OOP-EX1\obj\Debug\net6.0\6TI_VandervoortAlexandre_UAA14_OOP-EX1.csproj.CoreCompileInputs.cache
+C:\Users\220857\Downloads\UAA14\6TI_VandervoortAlexandre_UAA14_OOP-EX1\obj\Debug\net6.0\6TI_VandervoortAlexandre_UAA14_OOP-EX1.dll
+C:\Users\220857\Downloads\UAA14\6TI_VandervoortAlexandre_UAA14_OOP-EX1\obj\Debug\net6.0\refint\6TI_VandervoortAlexandre_UAA14_OOP-EX1.dll
+C:\Users\220857\Downloads\UAA14\6TI_VandervoortAlexandre_UAA14_OOP-EX1\obj\Debug\net6.0\6TI_VandervoortAlexandre_UAA14_OOP-EX1.pdb
+C:\Users\220857\Downloads\UAA14\6TI_VandervoortAlexandre_UAA14_OOP-EX1\obj\Debug\net6.0\6TI_VandervoortAlexandre_UAA14_OOP-EX1.genruntimeconfig.cache
+C:\Users\220857\Downloads\UAA14\6TI_VandervoortAlexandre_UAA14_OOP-EX1\obj\Debug\net6.0\ref\6TI_VandervoortAlexandre_UAA14_OOP-EX1.dll
