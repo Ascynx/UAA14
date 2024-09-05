@@ -1,0 +1,20 @@
+﻿<Window x:Class="_6TI_VandervoortAlexandre_WPFEx6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_6TI_VandervoortAlexandre_WPFEx6"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ListBox HorizontalAlignment="Center" VerticalAlignment="Center" Height="100">
+            <ListBoxItem Foreground="#9BAFAE">The World's Smallest Violin</ListBoxItem>
+            <ListBoxItem Foreground="#E546E6">Glory</ListBoxItem>
+            <ListBoxItem Foreground="#5E79Ec">Novocaine</ListBoxItem>
+            <ListBoxItem Foreground="#8042E2">Edge of My Life</ListBoxItem>
+            <ListBoxItem Foreground="#D777F8">Burn the house down</ListBoxItem>
+            <ListBoxItem Foreground="#AA08EA">Phoenix</ListBoxItem>
+            <ListBoxItem Foreground="#E355E4">Hope</ListBoxItem>
+        </ListBox>
+    </Grid>
+</Window>
