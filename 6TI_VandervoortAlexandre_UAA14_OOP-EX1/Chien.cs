@@ -2,20 +2,22 @@
 {
     internal class Chien
     {
-        private ushort _age { get; set; }
-        private string _race { get; set; }
-        private double _taille { get; set; }
-        private double _poid { get; set; }
-        private string _etat { get; set; }
-        private bool _puce { get; set; }
+        private string _nom;
+        private ushort _age;
+        private string _race;
+        private double _taille;
+        private double _poid;
+        private string _etat;
+        private bool _puce;
 
         private bool nourrit = false;
         private bool aBu = false;
 
         private static Random randomGen = new Random();
 
-        public Chien(string race, double taille, double poid, string etat, bool puce)
+        public Chien(string nom, string race, double taille, double poid, string etat, bool puce)
         {
+            _nom = nom;
             _age = 0;
             _race = race;
             _taille = taille;
@@ -29,9 +31,23 @@
             if (nourrit == false)
             {
                 nourrit = true;
+            } 
+
+            if (_etat == "Affamé")
+            {
+                _etat = "Bonne santé";
             }
 
             return null;
+        }
+
+        public void VieillirSkipCheck()
+        {
+            _age++;
+            _taille += randomGen.NextDouble();
+            _poid += randomGen.NextDouble() * 10;
+            nourrit = false;
+            aBu = false;
         }
 
         public void Vieillir()
@@ -48,11 +64,13 @@
                 return;
             }
 
-            _age++;
-            _taille += randomGen.NextDouble();
-            _poid += randomGen.NextDouble() * 10;
-            nourrit = false;
-            aBu = false;
+            if (_age > 17)
+            {
+                Mourrir();
+                return;
+            }
+
+            VieillirSkipCheck();
         }
 
         public string Boire()
@@ -81,9 +99,26 @@
             }
         }
 
+        public ushort GetAge()
+        {
+            return _age;
+        }
+
+        public string GetRace() { return _race; }
+
+        public string GetEtat()
+        {
+            return _etat;
+        }
+
+        public string AfficheCaracteristiques()
+        {
+            return "Nom : " + _nom + " Age : " + _age + " Race : " + _race;
+        }
+
         public override string ToString()
         {
-            return "{" + "age: " + _age + ", race: " + _race + ", taille: " + _taille + "m, poid: " + _poid + "kg, etat: " + _etat + ", pucé: " + _puce + "}";
+            return _nom + ": {" + "age: " + _age + ", race: " + _race + ", taille: " + (Math.Round(_taille * 100) / 100) + "m, poid: " + (Math.Round(_poid * 100) / 100) + "kg, etat: " + _etat + ", pucé: " + _puce + "}";
         }
     }
 }
