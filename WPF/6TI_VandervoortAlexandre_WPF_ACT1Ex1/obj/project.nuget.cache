@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "MBN0E+sp9Xx/3hgM0RtmApQIyd+1ecRdnsW7DZ9ByfLxjdqx7MdprN4zwOnPu8b4LyT0ZgzcQ3AqQTS4udVUhA==",
+  "dgSpecHash": "72HqZAMyhMRE0qWbcQ/jBr/QbjRHexFAIr/a11spyR0A3bZ7jcZHuCsnRd0vY6LCsKfEXMXOF9eOyrC/2YuDtw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\220857\\Downloads\\UAA14\\WPF\\6TI_VandervoortAlexandre_WPF_ACT1Ex1\\6TI_VandervoortAlexandre_WPF_ACT1Ex1.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/home/ascynx/Desktop/csharp/UAA14/WPF/6TI_VandervoortAlexandre_WPF_ACT1Ex1/6TI_VandervoortAlexandre_WPF_ACT1Ex1.csproj",
+  "expectedPackageFiles": [
+    "/home/ascynx/.nuget/packages/microsoft.netcore.app.ref/6.0.30/microsoft.netcore.app.ref.6.0.30.nupkg.sha512",
+    "/home/ascynx/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.30/microsoft.aspnetcore.app.ref.6.0.30.nupkg.sha512",
+    "/home/ascynx/.nuget/packages/microsoft.netcore.app.host.linux-x64/6.0.30/microsoft.netcore.app.host.linux-x64.6.0.30.nupkg.sha512"
+  ],
   "logs": []
 }

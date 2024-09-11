@@ -36,5 +36,22 @@
             <Button Content="Bouton 5"/>
             <Button Content="Bouton 6"/>
         </WrapPanel>
+        <Canvas Grid.Column="1" Grid.Row="1" Width="100" Height="100" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <GeometryDrawing Brush="Black">
+                <GeometryDrawing.Geometry>
+                    <EllipseGeometry Center="0,0" RadiusX="80" RadiusY="80" />
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+            <GeometryDrawing Brush="Yellow">
+                <GeometryDrawing.Geometry>
+                    <EllipseGeometry Center="0,0" RadiusX="70" RadiusY="70" />
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+            <GeometryDrawing Brush="Red">
+                <GeometryDrawing.Geometry>
+                    <EllipseGeometry Center="0,0" RadiusX="40" RadiusY="40" />
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+        </Canvas>
     </Grid>
 </Window>
