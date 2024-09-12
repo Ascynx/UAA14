@@ -7,82 +7,40 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TabControl>
-            <TabItem Header="Act 1 Ex 1">
-                    <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="1*"/>
-                    <ColumnDefinition Width="1*"/>
-                </Grid.ColumnDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="96*"/>
+            <ColumnDefinition Width="301*"/>
+            <ColumnDefinition Width="397*"/>
+        </Grid.ColumnDefinitions>
 
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="1*"/>
-                    <RowDefinition Height="1*"/>
-                </Grid.RowDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
 
-                <StackPanel Grid.Column="0" Grid.Row="0">
-                    <Button Content="Bouton 1" Height="100"/>
-                    <Button Content="Bouton 2" Height="100"/>
-                </StackPanel>
-                <DockPanel Grid.Column="1" Grid.Row="0">
-                    <Button DockPanel.Dock="Top" Height="50" Content="Top"/>
-                    <Button DockPanel.Dock="Bottom" Height="50" Content="Bottom"/>
-                    <Button DockPanel.Dock="Left" Width="50" Content="Left"/>
-                    <Button DockPanel.Dock="Right" Width="50" Content="Right"/>
-                        <Button Content="Direction"/>
-                </DockPanel>
-                    <Canvas Grid.Column="1" Grid.Row="1" Width="100" Height="100" HorizontalAlignment="Center" VerticalAlignment="Center">
-                        <GeometryDrawing Brush="Black">
-                            <GeometryDrawing.Geometry>
-                                <EllipseGeometry Center="0,0" RadiusX="80" RadiusY="80" />
-                            </GeometryDrawing.Geometry>
-                        </GeometryDrawing>
-                        <GeometryDrawing Brush="Yellow">
-                            <GeometryDrawing.Geometry>
-                                <EllipseGeometry Center="0,0" RadiusX="70" RadiusY="70" />
-                            </GeometryDrawing.Geometry>
-                        </GeometryDrawing>
-                        <GeometryDrawing Brush="Red">
-                            <GeometryDrawing.Geometry>
-                                <EllipseGeometry Center="0,0" RadiusX="40" RadiusY="40" />
-                            </GeometryDrawing.Geometry>
-                        </GeometryDrawing>
-                    </Canvas>
-                    <WrapPanel ItemWidth="110" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
-                    <Button Content="Bouton 1"/>
-                    <Button Content="Bouton 2"/>
-                    <Button Content="Bouton 3"/>
-                    <Button Height="60" Content="Bouton 4"/>
-                    <Button Content="Bouton 5"/>
-                    <Button Content="Bouton 6"/>
-                </WrapPanel>
-            </TabItem>
-            <TabItem Header="Act 1 Ex 2">
-                <!-- POUR INFO, IL M'ÉTAIT IMPOSSIBLE D'AVOIR LA PREVIEW DEPUIS CHEZ MOI, DONC JE N'AI QU'UNE IDÉE LIMITÉE DE À QUOI CELA RESSEMBLE. -->
-                <StackPanel Width="200" Height="240" Orientation="Horizontal" HorizontalAlignment="Center" Background="#9CAAAAFF">
-                    <Button Width="130" Height="60"/>
-                    <Button Content="C" Width="40" Height="40"/>
-                    
-                    <Button Content="1" Width="40" Height="40"/>
-                    <Button Content="2" Width="40" Height="40"/>
-                    <Button Content="3" Width="40" Height="40"/>
-                    <Button Content="+" Width="40" Height="40"/>
-                    
-                    <Button Content="4" Width="40" Height="40"/>
-                    <Button Content="5" Width="40" Height="40"/>
-                    <Button Content="6" Width="40" Height="40"/>
-                    <Button Content="-" Width="40" Height="40"/>
-                    
-                    <Button Content="7" Width="40" Height="40"/>
-                    <Button Content="8" Width="40" Height="40"/>
-                    <Button Content="9" Width="40" Height="40"/>
-                    <Button Content="/" Width="40" Height="40"/>
-                    
-                    <Button Content="," Width="40" Height="40"/>
-                    <Button Content="0" Width="40" Height="40"/>
-                    <Button Content="*" Width="40" Height="40"/>
-                    <Button Content="=" Width="40" Height="40"/>
-                </StackPanel>
-            </TabItem>
-        </TabControl>
+        <StackPanel Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2">
+            <Button Content="Bouton 1" Height="100"/>
+            <Button Content="Bouton 2" Height="100"/>
+        </StackPanel>
+        <DockPanel Grid.Column="2" Grid.Row="0">
+            <Button DockPanel.Dock="Top" Height="50" Content="Top"/>
+            <Button DockPanel.Dock="Bottom" Height="50" Content="Bottom"/>
+            <Button DockPanel.Dock="Left" Width="50" Content="Left"/>
+            <Button DockPanel.Dock="Right" Width="50" Content="Right"/>
+            <Button Content="Direction"/>
+        </DockPanel>
+        <Canvas Grid.Column="2" Grid.Row="1" Width="120" Height="120" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Ellipse Height="120" Stroke="Black" Width="120" Fill="Black"/>
+            <Ellipse Height="80" Stroke="Yellow" Width="80" Fill="Yellow" Canvas.Left="20" Canvas.Top="20"/>
+            <Ellipse Height="40" Stroke="Red" Width="40" Fill="Red" Canvas.Left="40" Canvas.Top="40"/>
+        </Canvas>
+        <WrapPanel ItemWidth="110" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.ColumnSpan="2" Margin="34,0,0,0">
+            <Button Content="Bouton 1"/>
+            <Button Content="Bouton 2"/>
+            <Button Content="Bouton 3"/>
+            <Button Height="60" Content="Bouton 4"/>
+            <Button Content="Bouton 5"/>
+            <Button Content="Bouton 6"/>
+        </WrapPanel>
     </Grid>
 </Window>
