@@ -52,6 +52,8 @@ namespace MatchingGame_Vandervoort
                 }
                 block.Text = "?";
             }
+            _tempsEcoule = 0;
+            _nbPairesTrouvees = 0;
         }
 
         private void InitGame()
