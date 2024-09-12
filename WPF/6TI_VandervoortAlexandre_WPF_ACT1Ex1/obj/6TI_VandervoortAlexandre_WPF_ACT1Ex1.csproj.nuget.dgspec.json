@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/home/ascynx/Desktop/csharp/UAA14/WPF/6TI_VandervoortAlexandre_WPF_ACT1Ex1/6TI_VandervoortAlexandre_WPF_ACT1Ex1.csproj": {}
+    "C:\\Users\\220857\\Downloads\\UAA14\\WPF\\6TI_VandervoortAlexandre_WPF_ACT1Ex1\\6TI_VandervoortAlexandre_WPF_ACT1Ex1.csproj": {}
   },
   "projects": {
-    "/home/ascynx/Desktop/csharp/UAA14/WPF/6TI_VandervoortAlexandre_WPF_ACT1Ex1/6TI_VandervoortAlexandre_WPF_ACT1Ex1.csproj": {
+    "C:\\Users\\220857\\Downloads\\UAA14\\WPF\\6TI_VandervoortAlexandre_WPF_ACT1Ex1\\6TI_VandervoortAlexandre_WPF_ACT1Ex1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/ascynx/Desktop/csharp/UAA14/WPF/6TI_VandervoortAlexandre_WPF_ACT1Ex1/6TI_VandervoortAlexandre_WPF_ACT1Ex1.csproj",
+        "projectUniqueName": "C:\\Users\\220857\\Downloads\\UAA14\\WPF\\6TI_VandervoortAlexandre_WPF_ACT1Ex1\\6TI_VandervoortAlexandre_WPF_ACT1Ex1.csproj",
         "projectName": "6TI_VandervoortAlexandre_WPF_ACT1Ex1",
-        "projectPath": "/home/ascynx/Desktop/csharp/UAA14/WPF/6TI_VandervoortAlexandre_WPF_ACT1Ex1/6TI_VandervoortAlexandre_WPF_ACT1Ex1.csproj",
-        "packagesPath": "/home/ascynx/.nuget/packages/",
-        "outputPath": "/home/ascynx/Desktop/csharp/UAA14/WPF/6TI_VandervoortAlexandre_WPF_ACT1Ex1/obj/",
+        "projectPath": "C:\\Users\\220857\\Downloads\\UAA14\\WPF\\6TI_VandervoortAlexandre_WPF_ACT1Ex1\\6TI_VandervoortAlexandre_WPF_ACT1Ex1.csproj",
+        "packagesPath": "C:\\Users\\220857\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\220857\\Downloads\\UAA14\\WPF\\6TI_VandervoortAlexandre_WPF_ACT1Ex1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/ascynx/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\220857\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0-windows"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -48,26 +50,15 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.30, 6.0.30]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.linux-x64",
-              "version": "[6.0.30, 6.0.30]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.30, 6.0.30]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.119/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }
