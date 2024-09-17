@@ -52,7 +52,7 @@ namespace _6TI_Vandervoort_OOP_ExLampe
                     }
                 }
             }
-            
+
             Console.WriteLine("Vous avez " + lampes.Count + " lampes et " + interrupteurs.Count + " interrupteurs.");
             //reset
             continuer = ConsoleKey.Escape;
@@ -73,12 +73,31 @@ namespace _6TI_Vandervoort_OOP_ExLampe
                 if (interrupteur.Actif != actif)
                 {
                     //Aurait été mieux si ça fonctionnait comme une HashMap dans java avec le typage mais bon.
-                    interrupteur.switchStatut((Lampe) lampes[entre]);
+                    interrupteur.switchStatut((Lampe)lampes[entre]);
                 }
             }
             Console.WriteLine("Voici vos lampes: " + ConcatTableau(lampes.Values.Cast<Lampe>().ToArray()));
-            Console.WriteLine("Et vos interrupteurs: " + ConcatTableau(interrupteurs.ToArray()));
-            
+            Console.WriteLine("Et vos interrupteurs: " + ConcatTableau(interrupteurs.ToArray()) + "\n");
+
+            //Code guirlande
+
+            //reset l'état des lampes
+            string[] cles = lampes.Keys.Cast<string>().ToArray();
+            for (int i = 0; i < cles.Length; i++)
+            {
+                ((Lampe)lampes[cles[i]]).Actif = false;
+            }
+            for (int x = 0; x < lampes.Count; x++)
+            {
+                for (int y = 0; y < lampes.Count; y++)
+                {
+                    if (y == x) 
+                    {
+                        ((Lampe)lampes[cles[y]]).Actif = true;
+                    }
+                }
+                Console.WriteLine(ConcatTableau(lampes.Values.Cast<Lampe>().ToArray()) + "\n");
+            }
         }
         
         public static string ConcatTableau<T>(T[] tableau)
