@@ -6,30 +6,38 @@ public class Lampe
     private bool _estActif = false;
     private int _couleur;
 
+    public string Code
+    {
+        get
+        {
+            return _code;
+        }
+    }
+
+    public bool Actif
+    {
+        get
+        {
+            return _estActif;
+        }
+        set
+        {
+            _estActif = value;
+        }
+    }
+
+    public int Couleur
+    {
+        get
+        {
+            return _couleur;
+        }
+    }
+
     public Lampe(string code, int couleur)
     {
         _code = code;
         _couleur = couleur;
-    }
-
-    public int GetCouleur()
-    {
-        return _couleur;
-    }
-
-    public string GetCode()
-    {
-        return _code;
-    }
-
-    public void SetActif(bool estActif)
-    {
-        _estActif = estActif;
-    }
-
-    public bool getActif()
-    {
-        return _estActif;
     }
 
     public override string ToString()

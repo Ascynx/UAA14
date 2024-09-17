@@ -4,40 +4,52 @@ namespace _6TI_Vandervoort_OOP_ExLampe;
 
 public class Interrupteur
 {
-    private string _code;
+    private readonly string _code;
 
     private bool _estActif = false;
     private string? _codeLampe = null;
+
+    public string CodeLampe
+    {
+        get
+        {
+            return _codeLampe;
+        }
+        set
+        {
+            _codeLampe = value;
+        }
+    }
+
+    public string Code
+    {
+        get
+        {
+            return _code;
+        }
+    }
+
+    public bool Actif
+    {
+        get
+        {
+            return _estActif;
+        }
+    }
 
     public Interrupteur(string code)
     {
         _code = code;
     }
-    
-    public string GetCode()
-    {
-        return _code;
-    }
-
-    public bool GetActif()
-    {
-        return _estActif;
-    }
 
     public void switchStatut(Lampe? lampe)
     {
         _estActif = !_estActif;
-        lampe?.SetActif(_estActif);
-    }
-
-    public string? GetCodeLampe()
-    {
-        return _codeLampe;
-    }
-
-    public void SetCodeLampe(string codeLampe)
-    {
-        _codeLampe = codeLampe;
+        if (lampe != null && (_codeLampe != null && lampe.Code == _codeLampe))
+        {
+            //seulement si la lampe donnée est non nulle et est la même que la lampe liée à cet interrupteur.
+            lampe.Actif = _estActif;
+        }
     }
     
     public override string ToString()

@@ -68,9 +68,9 @@ namespace _6TI_Vandervoort_OOP_ExLampe
                     Console.WriteLine("veuillez entrer le code de la lampe voulue.");
                     entre = Console.ReadLine();
                 }
-                interrupteur.SetCodeLampe(entre);
+                interrupteur.CodeLampe = entre;
                 bool actif = QuestionneUtilisateurBool("Voulez vous activer cet interrupteur?");
-                if (interrupteur.GetActif() != actif)
+                if (interrupteur.Actif != actif)
                 {
                     //Aurait été mieux si ça fonctionnait comme une HashMap dans java avec le typage mais bon.
                     interrupteur.switchStatut((Lampe) lampes[entre]);
