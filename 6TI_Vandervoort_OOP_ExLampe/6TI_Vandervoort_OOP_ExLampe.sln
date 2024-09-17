@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6TI_Vandervoort_OOP_ExLampe", "6TI_Vandervoort_OOP_ExLampe.csproj", "{68908BFE-124B-4703-B379-A4DEF950BE33}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68908BFE-124B-4703-B379-A4DEF950BE33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68908BFE-124B-4703-B379-A4DEF950BE33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68908BFE-124B-4703-B379-A4DEF950BE33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68908BFE-124B-4703-B379-A4DEF950BE33}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

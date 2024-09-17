@@ -1,0 +1,15 @@
+/home/ascynx/Desktop/csharp/UAA14/6TI_Vandervoort_OOP_ExLampe/bin/Debug/net6.0/6TI_Vandervoort_OOP_ExLampe
+/home/ascynx/Desktop/csharp/UAA14/6TI_Vandervoort_OOP_ExLampe/bin/Debug/net6.0/6TI_Vandervoort_OOP_ExLampe.deps.json
+/home/ascynx/Desktop/csharp/UAA14/6TI_Vandervoort_OOP_ExLampe/bin/Debug/net6.0/6TI_Vandervoort_OOP_ExLampe.runtimeconfig.json
+/home/ascynx/Desktop/csharp/UAA14/6TI_Vandervoort_OOP_ExLampe/bin/Debug/net6.0/6TI_Vandervoort_OOP_ExLampe.dll
+/home/ascynx/Desktop/csharp/UAA14/6TI_Vandervoort_OOP_ExLampe/bin/Debug/net6.0/ref/6TI_Vandervoort_OOP_ExLampe.dll
+/home/ascynx/Desktop/csharp/UAA14/6TI_Vandervoort_OOP_ExLampe/bin/Debug/net6.0/6TI_Vandervoort_OOP_ExLampe.pdb
+/home/ascynx/Desktop/csharp/UAA14/6TI_Vandervoort_OOP_ExLampe/obj/Debug/net6.0/6TI_Vandervoort_OOP_ExLampe.csproj.AssemblyReference.cache
+/home/ascynx/Desktop/csharp/UAA14/6TI_Vandervoort_OOP_ExLampe/obj/Debug/net6.0/6TI_Vandervoort_OOP_ExLampe.GeneratedMSBuildEditorConfig.editorconfig
+/home/ascynx/Desktop/csharp/UAA14/6TI_Vandervoort_OOP_ExLampe/obj/Debug/net6.0/6TI_Vandervoort_OOP_ExLampe.AssemblyInfoInputs.cache
+/home/ascynx/Desktop/csharp/UAA14/6TI_Vandervoort_OOP_ExLampe/obj/Debug/net6.0/6TI_Vandervoort_OOP_ExLampe.AssemblyInfo.cs
+/home/ascynx/Desktop/csharp/UAA14/6TI_Vandervoort_OOP_ExLampe/obj/Debug/net6.0/6TI_Vandervoort_OOP_ExLampe.csproj.CoreCompileInputs.cache
+/home/ascynx/Desktop/csharp/UAA14/6TI_Vandervoort_OOP_ExLampe/obj/Debug/net6.0/6TI_Vandervoort_OOP_ExLampe.dll
+/home/ascynx/Desktop/csharp/UAA14/6TI_Vandervoort_OOP_ExLampe/obj/Debug/net6.0/ref/6TI_Vandervoort_OOP_ExLampe.dll
+/home/ascynx/Desktop/csharp/UAA14/6TI_Vandervoort_OOP_ExLampe/obj/Debug/net6.0/6TI_Vandervoort_OOP_ExLampe.pdb
+/home/ascynx/Desktop/csharp/UAA14/6TI_Vandervoort_OOP_ExLampe/obj/Debug/net6.0/6TI_Vandervoort_OOP_ExLampe.genruntimeconfig.cache
