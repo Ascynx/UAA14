@@ -8,24 +8,26 @@
     "net6.0": []
   },
   "packageFolders": {
-    "/home/ascynx/.nuget/packages/": {}
+    "C:\\Users\\220857\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/ascynx/Desktop/csharp/UAA14/6TI_Vandervoort_OOP_ExLampe/6TI_Vandervoort_OOP_ExLampe.csproj",
+      "projectUniqueName": "C:\\Users\\220857\\Downloads\\UAA14\\6TI_Vandervoort_OOP_ExLampe\\6TI_Vandervoort_OOP_ExLampe.csproj",
       "projectName": "6TI_Vandervoort_OOP_ExLampe",
-      "projectPath": "/home/ascynx/Desktop/csharp/UAA14/6TI_Vandervoort_OOP_ExLampe/6TI_Vandervoort_OOP_ExLampe.csproj",
-      "packagesPath": "/home/ascynx/.nuget/packages/",
-      "outputPath": "/home/ascynx/Desktop/csharp/UAA14/6TI_Vandervoort_OOP_ExLampe/obj/",
+      "projectPath": "C:\\Users\\220857\\Downloads\\UAA14\\6TI_Vandervoort_OOP_ExLampe\\6TI_Vandervoort_OOP_ExLampe.csproj",
+      "packagesPath": "C:\\Users\\220857\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\220857\\Downloads\\UAA14\\6TI_Vandervoort_OOP_ExLampe\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/ascynx/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\220857\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -49,7 +51,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -58,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.132/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     }
   }
