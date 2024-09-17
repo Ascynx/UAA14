@@ -1,0 +1,15 @@
+C:\Users\220857\Downloads\UAA14\6TI_VandervoortAlexandre_Act2Ex1_Cercle\bin\Debug\net6.0\6TI_VandervoortAlexandre_Act2Ex1_Cercle.exe
+C:\Users\220857\Downloads\UAA14\6TI_VandervoortAlexandre_Act2Ex1_Cercle\bin\Debug\net6.0\6TI_VandervoortAlexandre_Act2Ex1_Cercle.deps.json
+C:\Users\220857\Downloads\UAA14\6TI_VandervoortAlexandre_Act2Ex1_Cercle\bin\Debug\net6.0\6TI_VandervoortAlexandre_Act2Ex1_Cercle.runtimeconfig.json
+C:\Users\220857\Downloads\UAA14\6TI_VandervoortAlexandre_Act2Ex1_Cercle\bin\Debug\net6.0\6TI_VandervoortAlexandre_Act2Ex1_Cercle.dll
+C:\Users\220857\Downloads\UAA14\6TI_VandervoortAlexandre_Act2Ex1_Cercle\bin\Debug\net6.0\6TI_VandervoortAlexandre_Act2Ex1_Cercle.pdb
+C:\Users\220857\Downloads\UAA14\6TI_VandervoortAlexandre_Act2Ex1_Cercle\obj\Debug\net6.0\6TI_VandervoortAlexandre_Act2Ex1_Cercle.csproj.AssemblyReference.cache
+C:\Users\220857\Downloads\UAA14\6TI_VandervoortAlexandre_Act2Ex1_Cercle\obj\Debug\net6.0\6TI_VandervoortAlexandre_Act2Ex1_Cercle.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\220857\Downloads\UAA14\6TI_VandervoortAlexandre_Act2Ex1_Cercle\obj\Debug\net6.0\6TI_VandervoortAlexandre_Act2Ex1_Cercle.AssemblyInfoInputs.cache
+C:\Users\220857\Downloads\UAA14\6TI_VandervoortAlexandre_Act2Ex1_Cercle\obj\Debug\net6.0\6TI_VandervoortAlexandre_Act2Ex1_Cercle.AssemblyInfo.cs
+C:\Users\220857\Downloads\UAA14\6TI_VandervoortAlexandre_Act2Ex1_Cercle\obj\Debug\net6.0\6TI_VandervoortAlexandre_Act2Ex1_Cercle.csproj.CoreCompileInputs.cache
+C:\Users\220857\Downloads\UAA14\6TI_VandervoortAlexandre_Act2Ex1_Cercle\obj\Debug\net6.0\6TI_VandervoortAlexandre_Act2Ex1_Cercle.dll
+C:\Users\220857\Downloads\UAA14\6TI_VandervoortAlexandre_Act2Ex1_Cercle\obj\Debug\net6.0\refint\6TI_VandervoortAlexandre_Act2Ex1_Cercle.dll
+C:\Users\220857\Downloads\UAA14\6TI_VandervoortAlexandre_Act2Ex1_Cercle\obj\Debug\net6.0\6TI_VandervoortAlexandre_Act2Ex1_Cercle.pdb
+C:\Users\220857\Downloads\UAA14\6TI_VandervoortAlexandre_Act2Ex1_Cercle\obj\Debug\net6.0\6TI_VandervoortAlexandre_Act2Ex1_Cercle.genruntimeconfig.cache
+C:\Users\220857\Downloads\UAA14\6TI_VandervoortAlexandre_Act2Ex1_Cercle\obj\Debug\net6.0\ref\6TI_VandervoortAlexandre_Act2Ex1_Cercle.dll
