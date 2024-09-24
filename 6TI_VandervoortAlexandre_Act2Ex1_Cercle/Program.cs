@@ -1,36 +1,79 @@
-﻿namespace _6TI_VandervoortAlexandre_Act2Ex1_Cercle
+﻿using _6TI_VandervoortAlexandre_Act2Ex1_Cercle.classes;
+
+namespace _6TI_VandervoortAlexandre_Act2Ex1_Cercle
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Bienvenue dans ce programme sur le cercle !");
-            
             bool continuer = true;
+            int choix = Questionneur.QuestionneUtilisateurIntMinMax(
+                "Quel programme voulez vous lancer? 1: Cercles,\n2: Nombre complexes,\n3: Sandwich Maker,\n4: Banque",
+                1,
+                4
+                );
+
+            switch (choix)
+            {
+                case 1:
+                    {
+                        InitProgrammeCercle(ref continuer);
+                        break;
+                    }
+                case 2:
+                    {
+                        InitProgrammeNombreComplexe(ref continuer);
+                        break;
+                    }
+                case 3:
+                    {
+                        InitProgrammeSandwichMaker(ref continuer);
+                        break;
+                    }
+                case 4:
+                    {
+                        InitProgrammeBanque(ref continuer);
+                        break;
+                    }
+                default: break;
+            }
+        }
+
+        public static void InitProgrammeCercle(ref bool continuer)
+        {
+            Console.WriteLine("Bienvenue dans ce programme sur le cercle !");
+
             while (continuer)
             {
-                double rayon = QuestionneUtilisateurDouble(("Taper un rayon pour votre cercle.");
+                double rayon = Questionneur.QuestionneUtilisateurDouble("Tapez un rayon pour votre cercle.");
                 Cercle cercle = new Cercle(rayon);
+
+
             }
         }
 
-        public static String QuestionneUtilisateur(String question, Func<String, bool> condition)
+        public static void InitProgrammeNombreComplexe(ref bool continuer)
         {
-            Console.WriteLine(question);
-            string res = Console.ReadLine();
-
-            while (res == null || !condition.Invoke(res))
+            while (continuer)
             {
-                Console.WriteLine("Je n'ai pas compris ce que vous avez dis.");
-                res = Console.ReadLine();
-            }
 
-            return res;
+            }
         }
 
-        public static double QuestionneUtilisateurDouble(String question)
+        public static void InitProgrammeSandwichMaker(ref bool continuer)
         {
-            return Double.Parse(QuestionneUtilisateur(question, (str) => Int32.TryParse(str, out int val)));
+            while (continuer)
+            {
+
+            }
+        }
+
+        public static void InitProgrammeBanque(ref bool continuer)
+        {
+            while (continuer)
+            {
+
+            }
         }
     }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _6TI_VandervoortAlexandre_Act2Ex1_Cercle
+namespace _6TI_VandervoortAlexandre_Act2Ex1_Cercle.classes
 {
     internal class Cercle
     {

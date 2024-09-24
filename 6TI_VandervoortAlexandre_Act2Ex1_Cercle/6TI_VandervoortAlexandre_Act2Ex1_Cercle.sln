@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6TI_VandervoortAlexandre_Act2Ex1_Cercle", "6TI_VandervoortAlexandre_Act2Ex1_Cercle.csproj", "{A2D5A66A-269B-47DF-8E18-C0DBACFBC7A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "6TI_VandervoortAlexandre_Act2Ex1_Cercle", "6TI_VandervoortAlexandre_Act2Ex1_Cercle.csproj", "{A2D5A66A-269B-47DF-8E18-C0DBACFBC7A7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Éléments de solution", "Éléments de solution", "{F2E9B377-F914-4E31-8837-21F977DD7C27}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
