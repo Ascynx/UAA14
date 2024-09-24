@@ -8,7 +8,7 @@ namespace _6TI_VandervoortAlexandre_Act2Ex1_Cercle
         {
             bool continuer = true;
             int choix = Questionneur.QuestionneUtilisateurIntMinMax(
-                "Quel programme voulez vous lancer? 1: Cercles,\n2: Nombre complexes,\n3: Sandwich Maker,\n4: Banque",
+                "Quel programme voulez vous lancer?\n1: Cercles,\n2: Nombre complexes,\n3: Sandwich Maker,\n4: Banque",
                 1,
                 4
                 );
