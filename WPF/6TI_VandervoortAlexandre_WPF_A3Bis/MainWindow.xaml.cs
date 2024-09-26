@@ -20,10 +20,51 @@ namespace _6TI_VandervoortAlexandre_WPF_A3Bis
     /// </summary>
     public partial class MainWindow : Window
     {
+        private static DateTime? _dateArrivee;
+        private static DateTime? _dateSortie;
+
         public MainWindow()
         {
             InitializeComponent();
             NbrePersonnes.PreviewTextInput += new TextCompositionEventHandler(NbrePersonnePreviewTextInputListener);
+            DateArrivee.SelectedDateChanged += DateArriveeSelectedDateChangedListener;
+        }
+
+        public void DateArriveeSelectedDateChangedListener(object sender, SelectionChangedEventArgs e)
+        {
+            if (e.AddedItems.Count > 0)
+            {
+                object item = e.AddedItems[0];
+
+                if (item is string dateStr) {
+                    if (DateTime.TryParse(dateStr, out DateTime date))
+                    {
+                        _dateArrivee = date;
+                    }
+                }
+            } else
+            {
+                _dateArrivee = null;
+            }
+        }
+        public void DateSortieSelectedDateChangedListener(object sender, SelectionChangedEventArgs e)
+        {
+            if (e.AddedItems.Count > 0)
+            {
+                object item = e.AddedItems[0];
+
+                if (item is string dateStr)
+                {
+                    if (DateTime.TryParse(dateStr, out DateTime date))
+                    {
+                        _dateSortie = date;
+                    }
+                }
+            }
+            else
+            {
+                _dateSortie = null;
+            }
         }
 
         public void NbrePersonnePreviewTextInputListener(object sender, TextCompositionEventArgs e)

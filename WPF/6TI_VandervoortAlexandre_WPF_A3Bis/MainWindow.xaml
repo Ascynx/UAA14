@@ -34,12 +34,12 @@
 
                 <DockPanel>
                     <TextBlock DockPanel.Dock="Left">Date d'arrivée:</TextBlock>
-                    <DatePickerTextBox DockPanel.Dock="Right" Width="100" x:Name="DateArrivee"/>
+                    <DatePicker DockPanel.Dock="Right" Width="100" x:Name="DateArrivee"/>
                 </DockPanel>
 
                 <DockPanel>
                     <TextBlock DockPanel.Dock="Left">Date de sortie:</TextBlock>
-                    <DatePickerTextBox DockPanel.Dock="Right" Width="100" x:Name="DateSortie"/>
+                    <DatePicker DockPanel.Dock="Right" Width="100" x:Name="DateSortie"/>
                 </DockPanel>
 
                 <DockPanel>
