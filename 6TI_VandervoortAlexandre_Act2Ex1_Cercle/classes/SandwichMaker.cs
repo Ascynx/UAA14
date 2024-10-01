@@ -10,22 +10,19 @@ namespace _6TI_VandervoortAlexandre_Act2Ex1_Cercle.classes
     {
         private static readonly Random RANDOM = new();
 
-        private string[] _proteines;
-        private string[] _condiments;
-        private string[] _pains;
-        private string[] _crudites;
+        
+        private static string[] _pains = new[] { "Pain blanc", "Baguette", "Pain complet", "Pain gris" };
+        private static string[] _crudites = new[] { "tomates", "salade", "carottes", "cornichons" };
+        private static string[] _condiments = new[] { "ketchup", "mayonnaise", "moutarde", "sauce cocktail" };
+        private static string[] _proteines = new[] { "jambon", "fromage", "roast beef", "salami", "œuf" };
 
         public string[] Proteines { get { return _proteines; } }
         public string[] Condiments { get { return _condiments; } }
         public string[] Pains { get { return _pains; } }
         public string[] Crudites { get { return _crudites; } }
 
-        public SandwichMaker(string[] proteines, string[] condiments, string[] pains, string[] crudites)
+        public SandwichMaker()
         {
-            _proteines = proteines;
-            _condiments = condiments;
-            _pains = pains;
-            _crudites = crudites;
         }
 
         public string ComposeSandwich()

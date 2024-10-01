@@ -14,23 +14,23 @@ namespace _6TI_VandervoortAlexandre_Act2Ex1_Cercle.classes
         public double Reel { get { return _reel; } set { _reel = value; } }
         public double Imaginaire { get { return _imaginaire; } set { _imaginaire = value; } }
 
-        NombreComplexe(double reel, double imaginaire)
+        public NombreComplexe(double reel, double imaginaire)
         {
             _reel = reel;
             _imaginaire = imaginaire;
         }
 
-        string AfficheComplexe()
+        public string AfficheComplexe()
         {
             return "(" + _reel + ", " + _imaginaire + ")";
         }
 
-        double CalculeModule()
+        public double CalculeModule()
         {
             return Math.Pow(_reel, 2) + Math.Pow(_imaginaire, 2);
         }
 
-        void Ajoute(NombreComplexe nombreComplexe)
+        public void Ajoute(NombreComplexe nombreComplexe)
         {
             _reel += nombreComplexe.Reel;
             _imaginaire += nombreComplexe.Imaginaire;

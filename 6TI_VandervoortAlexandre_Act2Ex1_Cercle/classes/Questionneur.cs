@@ -15,7 +15,7 @@ namespace _6TI_VandervoortAlexandre_Act2Ex1_Cercle.classes
 
             while (res == null || !condition.Invoke(res))
             {
-                Console.WriteLine("Je n'ai pas compris ce que vous avez dis.");
+                Console.WriteLine("Je n'ai pas compris ce que vous avez dit.");
                 res = Console.ReadLine();
             }
 
@@ -26,10 +26,20 @@ namespace _6TI_VandervoortAlexandre_Act2Ex1_Cercle.classes
         {
             return Int32.Parse(QuestionneUtilisateur(question, (str) => Int32.TryParse(str, out int val) && (val >= min && val <= max)));
         }
+        
+        public static int QuestionneUtilisateurInt(string question)
+        {
+            return Int32.Parse(QuestionneUtilisateur(question, (str) => Int32.TryParse(str, out int val)));
+        }
 
         public static double QuestionneUtilisateurDouble(String question)
         {
             return Double.Parse(QuestionneUtilisateur(question, (str) => Double.TryParse(str, out double val)));
+        }
+
+        public static string QuestionneUtilisateurSimple(String question)
+        {
+            return QuestionneUtilisateur(question, (str) => true);
         }
     }
 }

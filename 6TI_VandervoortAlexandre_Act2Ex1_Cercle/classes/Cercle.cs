@@ -30,5 +30,11 @@ namespace _6TI_VandervoortAlexandre_Act2Ex1_Cercle.classes
         {
             return Math.PI * (2 * _rayon);
         }
+
+        public override string ToString()
+        {
+            //multiplie et divise les nombres par 100 pour garder 2 décimal de précision tout en retirant le reste.
+            return "Le cercle avec un rayon " + (Math.Round(_rayon * 100) / 100) + " a un périmètre de " + (Math.Round(CalculePerimetre() * 100) / 100) + " et une aire de " + (Math.Round(CalculeAire() * 100) / 100);
+        }
     }
 }
