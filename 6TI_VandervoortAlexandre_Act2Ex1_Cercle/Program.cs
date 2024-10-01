@@ -73,7 +73,7 @@ namespace _6TI_VandervoortAlexandre_Act2Ex1_Cercle
                     Questionneur.QuestionneUtilisateurInt("Que vaut la partie imaginaire du complexe de départ?");
 
                 NombreComplexe complexe = new(reel, imaginaire);
-                Console.WriteLine("Le premier complexe : " + complexe.AfficheComplexe() + " a pour module : " + complexe.AfficheComplexe());
+                Console.WriteLine("Le premier complexe : " + complexe.AfficheComplexe() + " a pour module : " + complexe.CalculeModule());
                 
                 Console.WriteLine("Merci d'entrer un second complexe");
                 reel = Questionneur.QuestionneUtilisateurInt("Que vaut la partie réelle du second complexe?");
