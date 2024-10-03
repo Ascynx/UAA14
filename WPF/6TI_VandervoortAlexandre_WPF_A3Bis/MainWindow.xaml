@@ -5,68 +5,83 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_6TI_VandervoortAlexandre_WPF_A3Bis"
         mc:Ignorable="d"
-        Title="RESERVATIONS AU CENTRE DE VACANCES ASTY-MOULIN" Height="260" Width="520" Background="#FF963030">
+        Title="RESERVATIONS AU CENTRE DE VACANCES ASTY-MOULIN" Height="450" Width="700" Background="#FF963030">
     <Grid Margin="10">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
+            <RowDefinition Height="2*"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <GroupBox Header="TYPE DE LOGEMENT" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Left" Width="61">
-                <RadioButton Content="CHALET" x:Name="RadioLogementChalet"/>
-                <RadioButton Content="TENTE" x:Name="RadioLogementTente"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                
+                <GroupBox Header="TYPE DE LOGEMENT" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="22">
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10">
+                        <RadioButton Content="CHALET" x:Name="RadioLogementChalet" Margin="5"/>
+                        <RadioButton Content="TENTE" x:Name="RadioLogementTente" Margin="5"/>
+                    </StackPanel>
+                </GroupBox>
+
+                <CheckBox Grid.Row="1" VerticalAlignment="Center" Content="RESERVATION" FontSize="22"   />
+            </Grid>
+            
+            <GroupBox Grid.Column="1" Header="CARACTERISTIQUES DU SEJOUR" FontSize="22" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock VerticalAlignment="Center">Nbre de Personnes (entre 1 et 6):</TextBlock>
+                        <TextBox Width="20" Height="20" x:Name="NbrePersonnes"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="1" Orientation="Horizontal">
+                        <TextBlock VerticalAlignment="Center">Date d'arrivée:</TextBlock>
+                        <DatePicker Width="100" x:Name="DateArrivee" IsTodayHighlighted="True"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="2" Orientation="Horizontal">
+                        <TextBlock VerticalAlignment="Center">Date de sortie:</TextBlock>
+                        <DatePicker Width="100" x:Name="DateSortie"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="3" Orientation="Horizontal">
+                        <Button Content="DUREE SORTIE" x:Name="DureeSortie"/>
+                        <TextBlock VerticalAlignment="Center">durée en semaines</TextBlock>
+                    </StackPanel>
+                </Grid>
+            </GroupBox>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <GroupBox Header="RESULTATS" FontSize="22" VerticalAlignment="Bottom">
+                <StackPanel>
+                    <TextBlock Text="Prix à payer: " x:Name="PrixPayement" Margin="0, 10, 0, 0"/>
+                    <TextBlock Text="Nombres de semaines: " x:Name="SemainesNbre" Margin="0, 10, 0, 0"/>
+                </StackPanel>
+            </GroupBox>
+
+            <StackPanel Grid.Column="1" VerticalAlignment="Center">
+                <Button Margin="10" Width="150" HorizontalAlignment="Center" VerticalAlignment="Center" Content="CALCULER" FontSize="22"/>
+                <Button Margin="10" Width="150" HorizontalAlignment="Center" VerticalAlignment="Center" Content="INIT" FontSize="22"/>
             </StackPanel>
-        </GroupBox>
-
-        <GroupBox Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="2" Header="CARACTERISTIQUES DU SEJOUR" Width="300" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <WrapPanel>
-                <DockPanel>
-                    <TextBlock DockPanel.Dock="Left">Nbre de Personnes (entre 1 et 6):</TextBlock>
-                    <TextBox DockPanel.Dock="Right" Width="20" Height="20" x:Name="NbrePersonnes"/>
-                </DockPanel>
-
-                <DockPanel>
-                    <TextBlock DockPanel.Dock="Left">Date d'arrivée:</TextBlock>
-                    <DatePicker DockPanel.Dock="Right" Width="100" x:Name="DateArrivee"/>
-                </DockPanel>
-
-                <DockPanel>
-                    <TextBlock DockPanel.Dock="Left">Date de sortie:</TextBlock>
-                    <DatePicker DockPanel.Dock="Right" Width="100" x:Name="DateSortie"/>
-                </DockPanel>
-
-                <DockPanel>
-                    <Button DockPanel.Dock="Left" Content="DUREE SORTIE" x:Name="DureeSortie"/>
-                    <TextBlock DockPanel.Dock="Right">durée en semaines</TextBlock>
-                </DockPanel>
-            </WrapPanel>
-            <!-- personnes -->
-            <!-- date arrivée -->
-            <!-- date sortie -->
-            <!-- durée -->
-        </GroupBox>
-
-        <GroupBox Grid.Row="2" Grid.ColumnSpan="2" Header="RESULTATS" Width="300">
-            <StackPanel VerticalAlignment="Center">
-                <TextBlock Text="Prix à payer: " x:Name="PrixPayement"/>
-                <TextBlock Text="Nombres de semaines: " x:Name="SemainesNbre"/>
-            </StackPanel>
-            <!-- Prix -->
-            <!-- Semaines (nombre) -->
-        </GroupBox>
-
-        <CheckBox Grid.Row="1" Grid.ColumnSpan="2" VerticalAlignment="Center" Content="RESERVATION"/>
-
-        <StackPanel Grid.Row="2" Grid.Column="4" VerticalAlignment="Center">
-            <Button Grid.ColumnSpan="3" Width="100" HorizontalAlignment="Center" VerticalAlignment="Center" Content="CALCULER"/>
-            <Button Width="100" HorizontalAlignment="Center" VerticalAlignment="Center" Content="INIT"/>
-        </StackPanel>
+        </Grid>
     </Grid>
 </Window>
