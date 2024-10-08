@@ -20,15 +20,16 @@ namespace _6TI_VandervoortAlexandre_Act2Ex1_Cercle.classes
             _identifiant = identifiant;
         }
 
-        public void Verser(Personne personne, double montant)
+        public bool Verser(Personne personne, double montant)
         {
             if (montant > _cash)
             {
-                return;
+                return false;
             }
 
             _cash -= montant;
             personne.AjouterArgent(montant);
+            return true;
         }
 
         public void AjouterArgent(double montant)
