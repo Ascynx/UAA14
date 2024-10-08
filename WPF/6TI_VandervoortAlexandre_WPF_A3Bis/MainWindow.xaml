@@ -31,7 +31,7 @@
                     </StackPanel>
                 </GroupBox>
 
-                <CheckBox Grid.Row="1" VerticalAlignment="Center" Content="RESERVATION" FontSize="22"   />
+                <CheckBox Grid.Row="1" VerticalAlignment="Center" Content="RESERVATION" x:Name="CheckBoxReservation" FontSize="22"   />
             </Grid>
             
             <GroupBox Grid.Column="1" Header="CARACTERISTIQUES DU SEJOUR" FontSize="22" HorizontalAlignment="Center" VerticalAlignment="Center">
@@ -44,7 +44,7 @@
                     </Grid.RowDefinitions>
                     <StackPanel Orientation="Horizontal">
                         <TextBlock VerticalAlignment="Center">Nbre de Personnes (entre 1 et 6):</TextBlock>
-                        <TextBox Width="20" Height="20" x:Name="NbrePersonnes"/>
+                        <TextBox Width="24" Height="30" x:Name="NbrePersonnes" Text="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
                     </StackPanel>
 
                     <StackPanel Grid.Row="1" Orientation="Horizontal">
@@ -73,14 +73,14 @@
 
             <GroupBox Header="RESULTATS" FontSize="22" VerticalAlignment="Bottom">
                 <StackPanel>
-                    <TextBlock Text="Prix à payer: " x:Name="PrixPayement" Margin="0, 10, 0, 0"/>
+                    <TextBlock Text="Prix à payer: " x:Name="Resultat" Margin="0, 10, 0, 0"/>
                     <TextBlock Text="Nombres de semaines: " x:Name="SemainesNbre" Margin="0, 10, 0, 0"/>
                 </StackPanel>
             </GroupBox>
 
             <StackPanel Grid.Column="1" VerticalAlignment="Center">
-                <Button Margin="10" Width="150" HorizontalAlignment="Center" VerticalAlignment="Center" Content="CALCULER" FontSize="22"/>
-                <Button Margin="10" Width="150" HorizontalAlignment="Center" VerticalAlignment="Center" Content="INIT" FontSize="22"/>
+                <Button x:Name="BoutonCalcul"  Margin="10" Width="150" HorizontalAlignment="Center" VerticalAlignment="Center" Content="CALCULER" FontSize="22"/>
+                <Button x:Name="BoutonInit" Margin="10" Width="150" HorizontalAlignment="Center" VerticalAlignment="Center" Content="INIT" FontSize="22"/>
             </StackPanel>
         </Grid>
     </Grid>
