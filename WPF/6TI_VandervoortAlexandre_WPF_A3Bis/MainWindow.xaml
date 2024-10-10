@@ -71,6 +71,8 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
+            <TextBlock Visibility="Collapsed" Text="TRAITEMENT RÉALISÉ" x:Name="TraitementRealise" FontSize="22" FontWeight="Bold"/>
+
             <GroupBox Header="RESULTATS" FontSize="22" VerticalAlignment="Bottom">
                 <StackPanel>
                     <TextBlock Text="Prix à payer: " x:Name="Resultat" Margin="0, 10, 0, 0"/>

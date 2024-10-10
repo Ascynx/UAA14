@@ -21,19 +21,27 @@ namespace _6TI_VandervoortAlexandre_WPF_A3Bis
         private static readonly double FRAIS_PERSONNE_JOUR = 0.30;
         
         private static readonly int[] AVAILABILITY_MONTHS = new int[] { 1, 4, 7, 8, 12 };
+        //accessibilité la plus proche
         private static readonly DateTime CLOSEST_AVAILABLE_TIME = GetClosestAvailableTime(DateTime.Now);
 
         public MainWindow()
         {
             InitializeComponent();
-            
+
+            DateTime displayDateEnd = GetClosestEndOfPeriodTime(CLOSEST_AVAILABLE_TIME.AddYears(1));
+
             //mise en place des valeurs de base (dynamique)
-            DateArrivee.SelectedDate = CLOSEST_AVAILABLE_TIME;
-            DateSortie.SelectedDate = CLOSEST_AVAILABLE_TIME;
+            DateArrivee.DisplayDateStart = CLOSEST_AVAILABLE_TIME;
+            DateArrivee.DisplayDateEnd = displayDateEnd;
+
+            DateSortie.DisplayDateStart = CLOSEST_AVAILABLE_TIME;
+            DateSortie.DisplayDateEnd = displayDateEnd;
+
             BoutonCalcul.IsEnabled = false;
 
 
             NbrePersonnes.PreviewTextInput += new TextCompositionEventHandler(NbrePersonnePreviewTextInputListener);
+            //permet de forcer l'emplacement d'un 1 si l'utilisateur laisse l'emplacement vide.
             NbrePersonnes.LostFocus += NbrePersonnes_LostFocus;
 
             DateArrivee.SelectedDateChanged += DateArriveeSelectedDateChangedListener;
@@ -51,11 +59,10 @@ namespace _6TI_VandervoortAlexandre_WPF_A3Bis
         /// <param name="e"></param>
         private void BoutonCalcul_Click(object sender, RoutedEventArgs e)
         {
-            if ((RadioLogementChalet.IsPressed || RadioLogementTente.IsPressed) && _setCalculSemaine && NbrePersonnes.Text != String.Empty)
+            if (((RadioLogementChalet.IsChecked.HasValue && RadioLogementChalet.IsChecked.Value) || (RadioLogementTente.IsChecked.HasValue && RadioLogementTente.IsChecked.Value)) && _setCalculSemaine && NbrePersonnes.Text != String.Empty)
             {
                 //toutes les valeurs requises sont actives.
-
-                bool estChalet = RadioLogementChalet.IsPressed;
+                bool estChalet = RadioLogementChalet.IsChecked.Value; //sauf race condition, pas un problème.
                 int personnes = int.Parse(NbrePersonnes.Text);
 
                 double joursSéjour = GetDuree(DateArrivee.SelectedDate.Value, DateSortie.SelectedDate.Value);
@@ -85,12 +92,7 @@ namespace _6TI_VandervoortAlexandre_WPF_A3Bis
                 {
                     valeur = PRIX_BASE_NOEL_PAQUES[index];
                 }
-                valeur += (personnes * joursSéjour * 0.30);
-
-                if (CheckBoxReservation.IsChecked)
-                {
-                    valeur += FRAIS_RESERVATION;
-                }
+                valeur += (personnes * joursSéjour * FRAIS_PERSONNE_JOUR);
 
                 if (semaines >= 5)
                 {
@@ -100,7 +102,13 @@ namespace _6TI_VandervoortAlexandre_WPF_A3Bis
                     valeur -= valeur * RISTOURNE_3_4_SEMAINES;
                 }
 
+                if (CheckBoxReservation.IsChecked.HasValue && CheckBoxReservation.IsChecked.Value)
+                {
+                    valeur += FRAIS_RESERVATION;
+                }
 
+                Resultat.Text = "Prix à payer: " + valeur;
+                TraitementRealise.Visibility = Visibility.Visible;
             }
         }
 
@@ -126,13 +134,16 @@ namespace _6TI_VandervoortAlexandre_WPF_A3Bis
         }
 
         /// <summary>
-        /// Remet à zero le calcul de prix du séjour
+        /// Remet à zero le calcul de prix du séjour.
         /// </summary>
         private void ResetCalculSemaine()
         {
             SemainesNbre.Text = "Nombres de semaines: ";
             _setCalculSemaine = false;
             BoutonCalcul.IsEnabled = false;
+
+            TraitementRealise.Visibility= Visibility.Collapsed;
+            Resultat.Text = "Prix à payer: ";
         }
 
         /// <summary>
@@ -163,6 +174,11 @@ namespace _6TI_VandervoortAlexandre_WPF_A3Bis
                     DateSortie.SelectedDate = CLOSEST_AVAILABLE_TIME;
                 }
 
+                if (DateArrivee.SelectedDate.HasValue && DateSortie.SelectedDate.HasValue && !IsEndDateInSameAvailabilityAsStartDate(DateArrivee.SelectedDate.Value, DateSortie.SelectedDate.Value))
+                {
+                    DateSortie.SelectedDate = DateArrivee.SelectedDate;
+                }
+
                 ResetCalculSemaine();
             }
         }
@@ -188,6 +204,11 @@ namespace _6TI_VandervoortAlexandre_WPF_A3Bis
                 if (DateArrivee.SelectedDate < CLOSEST_AVAILABLE_TIME)
                 {
                     DateArrivee.SelectedDate = CLOSEST_AVAILABLE_TIME;
+                }
+
+                if (DateArrivee.SelectedDate.HasValue && DateSortie.SelectedDate.HasValue && !IsEndDateInSameAvailabilityAsStartDate(DateArrivee.SelectedDate.Value, DateSortie.SelectedDate.Value))
+                {
+                    DateSortie.SelectedDate = DateArrivee.SelectedDate;
                 }
 
                 ResetCalculSemaine();
@@ -233,6 +254,34 @@ namespace _6TI_VandervoortAlexandre_WPF_A3Bis
         }
 
         /// <summary>
+        /// Récupère la dernière date possible dans la prochaine période.
+        /// </summary>
+        /// <param name="date"></param>
+        /// <returns></returns>
+        private static DateTime GetClosestEndOfPeriodTime(DateTime date)
+        {
+            if (!AVAILABILITY_MONTHS.Contains(date.Month))
+            {
+                date = GetClosestAvailableTime(date);
+            }
+
+            int maxMonth = date.Month;
+            if ((maxMonth != 12 && AVAILABILITY_MONTHS.Contains(date.Month + 1)) || AVAILABILITY_MONTHS.Contains(date.Month - 11))
+            {
+                maxMonth++;
+            }
+
+            int year = date.Year;
+            if (maxMonth > 12)
+            {
+                maxMonth -= 12;
+                year++;
+            }
+
+            return new DateTime(year, maxMonth, DateTime.DaysInMonth(date.Year, maxMonth));
+        }
+
+        /// <summary>
         /// Récupère la date possible la plus proche.
         /// </summary>
         /// <param name="date"></param>
@@ -265,7 +314,6 @@ namespace _6TI_VandervoortAlexandre_WPF_A3Bis
                     }
                 }
 
-                int day = 0;
                 int year = date.Year;
                 //on a passé une année.
                 if (closestAvailableMonth < dateMonth)
@@ -273,10 +321,15 @@ namespace _6TI_VandervoortAlexandre_WPF_A3Bis
                     year += 1;
                 }
 
-                return new DateTime(year, closestAvailableMonth.Value, day + 1);
+                return new DateTime(year, closestAvailableMonth.Value, 1);
             }
 
             return date;
+        }
+
+        private static bool IsEndDateInSameAvailabilityAsStartDate(DateTime start, DateTime end)
+        {
+            return GetClosestEndOfPeriodTime(start) >= end;
         }
     }
 }
