@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6TI_VandervoortAlexandre_WPF_A3E3", "6TI_VandervoortAlexandre_WPF_A3E3.csproj", "{DA5FD60A-548C-44DD-AC86-B6F630037BB0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA5FD60A-548C-44DD-AC86-B6F630037BB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA5FD60A-548C-44DD-AC86-B6F630037BB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA5FD60A-548C-44DD-AC86-B6F630037BB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA5FD60A-548C-44DD-AC86-B6F630037BB0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0F82530B-213A-47EE-B951-CA36FDC5CB12}
+	EndGlobalSection
+EndGlobal
