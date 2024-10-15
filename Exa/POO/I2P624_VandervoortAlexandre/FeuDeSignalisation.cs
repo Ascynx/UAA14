@@ -35,7 +35,7 @@ namespace I2P624_VandervoortAlexandre
 
         public void Clignote(int nbAlternance)
         {
-            Console.WriteLine("Le feu de signalisation " + _identifiant + " est " + (Etat ? "allumé" : "éteint"));
+            Console.WriteLine("Le feu de signalisation " + _identifiant + " est " + (Etat ? "allumé" : "éteint") + ".");
             for (int i = 0; i < nbAlternance; i++)
             {
                 ChangeEtat();

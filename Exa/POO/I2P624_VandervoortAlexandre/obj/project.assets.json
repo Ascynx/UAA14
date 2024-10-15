@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\220857\\Downloads\\I2P624_VandervoortAlexandre\\I2P624_VandervoortAlexandre.csproj",
+      "projectUniqueName": "C:\\Users\\220857\\Downloads\\UAA14\\Exa\\POO\\I2P624_VandervoortAlexandre\\I2P624_VandervoortAlexandre.csproj",
       "projectName": "I2P624_VandervoortAlexandre",
-      "projectPath": "C:\\Users\\220857\\Downloads\\I2P624_VandervoortAlexandre\\I2P624_VandervoortAlexandre.csproj",
+      "projectPath": "C:\\Users\\220857\\Downloads\\UAA14\\Exa\\POO\\I2P624_VandervoortAlexandre\\I2P624_VandervoortAlexandre.csproj",
       "packagesPath": "C:\\Users\\220857\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\220857\\Downloads\\I2P624_VandervoortAlexandre\\obj\\",
+      "outputPath": "C:\\Users\\220857\\Downloads\\UAA14\\Exa\\POO\\I2P624_VandervoortAlexandre\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\220857\\AppData\\Roaming\\NuGet\\NuGet.Config",
