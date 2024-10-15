@@ -1,0 +1,15 @@
+C:\Users\220857\Downloads\I2P624_VandervoortAlexandre\bin\Debug\net6.0\I2P624_VandervoortAlexandre.exe
+C:\Users\220857\Downloads\I2P624_VandervoortAlexandre\bin\Debug\net6.0\I2P624_VandervoortAlexandre.deps.json
+C:\Users\220857\Downloads\I2P624_VandervoortAlexandre\bin\Debug\net6.0\I2P624_VandervoortAlexandre.runtimeconfig.json
+C:\Users\220857\Downloads\I2P624_VandervoortAlexandre\bin\Debug\net6.0\I2P624_VandervoortAlexandre.dll
+C:\Users\220857\Downloads\I2P624_VandervoortAlexandre\bin\Debug\net6.0\I2P624_VandervoortAlexandre.pdb
+C:\Users\220857\Downloads\I2P624_VandervoortAlexandre\obj\Debug\net6.0\I2P624_VandervoortAlexandre.csproj.AssemblyReference.cache
+C:\Users\220857\Downloads\I2P624_VandervoortAlexandre\obj\Debug\net6.0\I2P624_VandervoortAlexandre.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\220857\Downloads\I2P624_VandervoortAlexandre\obj\Debug\net6.0\I2P624_VandervoortAlexandre.AssemblyInfoInputs.cache
+C:\Users\220857\Downloads\I2P624_VandervoortAlexandre\obj\Debug\net6.0\I2P624_VandervoortAlexandre.AssemblyInfo.cs
+C:\Users\220857\Downloads\I2P624_VandervoortAlexandre\obj\Debug\net6.0\I2P624_VandervoortAlexandre.csproj.CoreCompileInputs.cache
+C:\Users\220857\Downloads\I2P624_VandervoortAlexandre\obj\Debug\net6.0\I2P624_VandervoortAlexandre.dll
+C:\Users\220857\Downloads\I2P624_VandervoortAlexandre\obj\Debug\net6.0\refint\I2P624_VandervoortAlexandre.dll
+C:\Users\220857\Downloads\I2P624_VandervoortAlexandre\obj\Debug\net6.0\I2P624_VandervoortAlexandre.pdb
+C:\Users\220857\Downloads\I2P624_VandervoortAlexandre\obj\Debug\net6.0\I2P624_VandervoortAlexandre.genruntimeconfig.cache
+C:\Users\220857\Downloads\I2P624_VandervoortAlexandre\obj\Debug\net6.0\ref\I2P624_VandervoortAlexandre.dll
