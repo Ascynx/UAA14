@@ -52,25 +52,48 @@ namespace _6TI_VandervoortAlexandre_WPF_A3E3
 
         private void EquationButton_Click(object sender, RoutedEventArgs e)
         {
+            _equation.TryPeek(out string v);
+            if (v == null)
+            {
+                v = " ";
+            }
+
+            string lastType = GetTypeOfChar(v.First());
+            string endType = GetTypeOfChar(v.Last());
+
             if (e.Source is Button button && button.Content is string content)
             {
                 _equation.Push(content);
+
+                string type = GetTypeOfChar(content.First());
+                if ((lastType == "number" && type == lastType) || (endType == "comma" && type == "number") || (lastType == "number" && type == "comma")) //TODO fonctionne pas quand ça suit une virgule
+                {
+                    string t = "";
+                    t += _equation.Pop();
+                    t += _equation.Pop();
+
+
+                    //fusionne les deux.
+                    _equation.Push(t);
+                }
             }
+            Update();
         }
 
         private void EqualButton_Click(object sender, RoutedEventArgs e)
         {
+            OutputBlock.Text = "" + EvaluateExpression();
+        }
+
+        private void Update()
+        {
             string output = "";
 
-            Stack<string> invertedStack = new();
-            while (_equation.TryPeek(out _))
+            string[] copieEquation = new string[_equation.Count];
+            _equation.CopyTo(copieEquation, 0);
+            for (int i = copieEquation.Length - 1; i >= 0; i--)
             {
-                invertedStack.Push(_equation.Pop());
-            }
-
-            while (invertedStack.TryPeek(out _))
-            {
-                output += invertedStack.Pop().ToString();
+                output += copieEquation[i]; //TODO inverser les nombres
             }
 
             OutputBlock.Text = output.Trim();
@@ -79,13 +102,14 @@ namespace _6TI_VandervoortAlexandre_WPF_A3E3
         private void ResetButton_Click(object sender, RoutedEventArgs e)
         {
             _equation.Clear();
+            Update();
         }
 
         private static float EvaluateExpression()
         {
             float? num1 = null;
             float? num2 = null;
-            string op = null;
+            string? op = null;
 
             while (_equation.TryPeek(out _))
             {
@@ -93,7 +117,7 @@ namespace _6TI_VandervoortAlexandre_WPF_A3E3
                 string type = GetTypeOfChar(v.First());
                 if (type == "number")
                 {
-                    int num = int.Parse(v.Substring(1));
+                    int num = int.Parse("" + v);
                     if (num2 == null)
                     {
                         if (op == "minus")
@@ -104,6 +128,9 @@ namespace _6TI_VandervoortAlexandre_WPF_A3E3
                         {
                             num2 = num;
                         }
+                    } else if (op == null && num1 == null)
+                    {
+                        num2 += num;
                     } else if (num1 == null)
                     {
                         num1 = num;
@@ -133,9 +160,19 @@ namespace _6TI_VandervoortAlexandre_WPF_A3E3
 
                 if (num1 != null && op != null)
                 {
-                    float resultat = AppliqueOperateur(op, num2, num1);
+                    float resultat = AppliqueOperateur(op, num1.Value, num2.Value);
+                    op = null;
+                    num1 = null;
+                    num2 = resultat;
                 }
             }
+
+            if (num2 == null)
+            {
+                throw new Exception("Pas réussi à évaluer cette expression.");
+            }
+
+            return num2.Value;
         }
 
         private static string GetTypeOfChar(char c)
