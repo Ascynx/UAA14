@@ -59,19 +59,31 @@ namespace _6TI_VandervoortAlexandre_WPF_A3E3
             }
 
             string lastType = GetTypeOfChar(v.First());
-            string endType = GetTypeOfChar(v.Last());
+
+            bool anyComma = v.Any((c) => c == CommaButton.Content);
 
             if (e.Source is Button button && button.Content is string content)
             {
                 _equation.Push(content);
 
                 string type = GetTypeOfChar(content.First());
-                if ((lastType == "number" && type == lastType) || (endType == "comma" && type == "number") || (lastType == "number" && type == "comma")) //TODO fonctionne pas quand ça suit une virgule
+
+                if (anyComma || type == "comma")
+                {
+                    string t = "";
+                    string inter = _equation.Pop();
+                    t += _equation.Pop();
+                    t += inter;
+
+                    //fusionne les deux.
+                    _equation.Push(t);
+                }
+
+                if (!anyComma && lastType == type && lastType == "number")
                 {
                     string t = "";
                     t += _equation.Pop();
                     t += _equation.Pop();
-
 
                     //fusionne les deux.
                     _equation.Push(t);
@@ -117,7 +129,7 @@ namespace _6TI_VandervoortAlexandre_WPF_A3E3
                 string type = GetTypeOfChar(v.First());
                 if (type == "number")
                 {
-                    int num = int.Parse("" + v);
+                    float num = float.Parse("" + v);
                     if (num2 == null)
                     {
                         if (op == "minus")
