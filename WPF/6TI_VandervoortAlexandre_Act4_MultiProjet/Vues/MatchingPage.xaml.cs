@@ -16,19 +16,19 @@ using System.Windows.Shapes;
 using System.Threading;
 using System.Diagnostics;
 
-namespace MatchingGame_Vandervoort
+namespace 6TI_VandervoortAlexandre_Act4_MultiProjet.Vues;
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for MainPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainPage : Page
     {
         private static readonly DispatcherTimer _timer = new DispatcherTimer();
         private int _tempsEcoule = 0;
         private int _nbPairesTrouvees = 0;
 
 
-        public MainWindow()
+        public MainPage()
         {
             InitializeComponent();
             _timer.Interval = TimeSpan.FromSeconds(1);
