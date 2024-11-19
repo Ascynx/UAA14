@@ -1,0 +1,15 @@
+C:\Users\220857\Downloads\UAA14\6TI_VA_Act6Ex3\bin\Debug\net6.0\6TI_VA_Act6Ex3.exe
+C:\Users\220857\Downloads\UAA14\6TI_VA_Act6Ex3\bin\Debug\net6.0\6TI_VA_Act6Ex3.deps.json
+C:\Users\220857\Downloads\UAA14\6TI_VA_Act6Ex3\bin\Debug\net6.0\6TI_VA_Act6Ex3.runtimeconfig.json
+C:\Users\220857\Downloads\UAA14\6TI_VA_Act6Ex3\bin\Debug\net6.0\6TI_VA_Act6Ex3.dll
+C:\Users\220857\Downloads\UAA14\6TI_VA_Act6Ex3\bin\Debug\net6.0\6TI_VA_Act6Ex3.pdb
+C:\Users\220857\Downloads\UAA14\6TI_VA_Act6Ex3\obj\Debug\net6.0\6TI_VA_Act6Ex3.csproj.AssemblyReference.cache
+C:\Users\220857\Downloads\UAA14\6TI_VA_Act6Ex3\obj\Debug\net6.0\6TI_VA_Act6Ex3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\220857\Downloads\UAA14\6TI_VA_Act6Ex3\obj\Debug\net6.0\6TI_VA_Act6Ex3.AssemblyInfoInputs.cache
+C:\Users\220857\Downloads\UAA14\6TI_VA_Act6Ex3\obj\Debug\net6.0\6TI_VA_Act6Ex3.AssemblyInfo.cs
+C:\Users\220857\Downloads\UAA14\6TI_VA_Act6Ex3\obj\Debug\net6.0\6TI_VA_Act6Ex3.csproj.CoreCompileInputs.cache
+C:\Users\220857\Downloads\UAA14\6TI_VA_Act6Ex3\obj\Debug\net6.0\6TI_VA_Act6Ex3.dll
+C:\Users\220857\Downloads\UAA14\6TI_VA_Act6Ex3\obj\Debug\net6.0\refint\6TI_VA_Act6Ex3.dll
+C:\Users\220857\Downloads\UAA14\6TI_VA_Act6Ex3\obj\Debug\net6.0\6TI_VA_Act6Ex3.pdb
+C:\Users\220857\Downloads\UAA14\6TI_VA_Act6Ex3\obj\Debug\net6.0\6TI_VA_Act6Ex3.genruntimeconfig.cache
+C:\Users\220857\Downloads\UAA14\6TI_VA_Act6Ex3\obj\Debug\net6.0\ref\6TI_VA_Act6Ex3.dll

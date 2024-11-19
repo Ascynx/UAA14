@@ -14,6 +14,7 @@
             for (int i = 0; i < 5; i++)
             {
                 Animal animal = animals[i];
+                animal.Manger("Salade");
                 if (animal is Chat chat)
                 {
                     Console.WriteLine(chat.Miaule());
