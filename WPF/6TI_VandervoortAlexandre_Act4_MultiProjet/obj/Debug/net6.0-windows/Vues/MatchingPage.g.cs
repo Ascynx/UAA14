@@ -68,8 +68,7 @@ namespace _6TI_VandervoortAlexandre_Act4_MultiProjet.Vues {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/6TI_VandervoortAlexandre_Act4_MultiProjet;V1.0.0.0;component/vues/matchingpage.x" +
-                    "aml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/6TI_VandervoortAlexandre_Act4_MultiProjet;component/vues/matchingpage.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Vues\MatchingPage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

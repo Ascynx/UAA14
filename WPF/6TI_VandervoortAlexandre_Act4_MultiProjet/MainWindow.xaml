@@ -8,10 +8,22 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
-            
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            
+            <RowDefinition/>
+            <RowDefinition Height="6*"/>
         </Grid.RowDefinitions>
+
+        <Button Content="Matching Game" x:Name="Nav1"/>
+        <Button Content="Trinome" x:Name="Nav2" Grid.Column="1"/>
+        <Button Content="Chalet" x:Name="Nav3" Grid.Column="2"/>
+        
+
+        <Frame Grid.Row="1" Grid.ColumnSpan="3" x:Name="MainFrame" NavigationUIVisibility="Hidden">
+            
+        </Frame>
     </Grid>
 </Window>

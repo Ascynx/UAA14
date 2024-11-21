@@ -10,7 +10,16 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Vues\ChaletPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vues\TrinomePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Vues\MatchingPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vues\ResultWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

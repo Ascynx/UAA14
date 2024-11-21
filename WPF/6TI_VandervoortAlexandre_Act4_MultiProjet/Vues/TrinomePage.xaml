@@ -1,0 +1,36 @@
+﻿<Page x:Class="_6TI_VandervoortAlexandre_Act4_MultiProjet.Vues.TrinomePage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_6TI_VandervoortAlexandre_Act4_MultiProjet.Vues"
+        mc:Ignorable="d"
+        Title="Equations du second degré" Height="600" Width="400">
+    <Grid Background="LightGray">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="48" FontWeight="Bold" Text="A"/>
+        <TextBox x:Name="ABox" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="4" HorizontalAlignment="Center" VerticalAlignment="Center" Height="70" Width="240" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24"/>
+
+        <TextBlock Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="48" FontWeight="Bold" Text="B"/>
+        <TextBox x:Name="BBox" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="4" HorizontalAlignment="Center" VerticalAlignment="Center" Height="70" Width="240" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24"/>
+
+        <TextBlock Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="48" FontWeight="Bold" Text="C"/>
+        <TextBox x:Name="CBox"  Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="4" HorizontalAlignment="Center" VerticalAlignment="Center" Height="70" Width="240" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24"/>
+
+        <Button x:Name="CalculBouton" Background="White" Grid.Row="3" Grid.ColumnSpan="4" HorizontalAlignment="Center" VerticalAlignment="Center" Content="CALCULER" FontSize="48" FontWeight="Bold" Height="70" Width="240"/>
+        <Button x:Name="VBouton" Background="White" Visibility="Hidden" Grid.Row="3" Grid.Column="4" HorizontalAlignment="Left" VerticalAlignment="Center" Content="V" FontSize="48" FontWeight="Bold" Height="70" Width="40"/>
+    </Grid>
+</Page>

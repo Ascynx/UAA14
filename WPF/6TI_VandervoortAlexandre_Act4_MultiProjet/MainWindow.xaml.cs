@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _6TI_VandervoortAlexandre_Act4_MultiProjet.Vues;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,24 @@ namespace _6TI_VandervoortAlexandre_Act4_MultiProjet
         public MainWindow()
         {
             InitializeComponent();
+            Nav1.PreviewMouseDown += Nav1_PreviewMouseDown;
+            Nav2.PreviewMouseDown += Nav2_PreviewMouseDown;
+            Nav3.PreviewMouseDown += Nav3_PreviewMouseDown;
+        }
+
+        private void Nav3_PreviewMouseDown(object sender, MouseButtonEventArgs e)
+        {
+            MainFrame.Content = new ChaletPage();
+        }
+
+        private void Nav2_PreviewMouseDown(object sender, MouseButtonEventArgs e)
+        {
+            MainFrame.Content = new TrinomePage();
+        }
+
+        private void Nav1_PreviewMouseDown(object sender, MouseButtonEventArgs e)
+        {
+            MainFrame.Content = new MatchingPage();
         }
     }
 }
