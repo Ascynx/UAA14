@@ -27,3 +27,5 @@ C:\Users\220857\Downloads\UAA14\WPF\6TI_VandervoortAlexandre_Act4_MultiProjet\ob
 C:\Users\220857\Downloads\UAA14\WPF\6TI_VandervoortAlexandre_Act4_MultiProjet\obj\Debug\net6.0-windows\Vues\TrinomePage.baml
 C:\Users\220857\Downloads\UAA14\WPF\6TI_VandervoortAlexandre_Act4_MultiProjet\obj\Debug\net6.0-windows\Vues\ChaletPage.g.cs
 C:\Users\220857\Downloads\UAA14\WPF\6TI_VandervoortAlexandre_Act4_MultiProjet\obj\Debug\net6.0-windows\Vues\ChaletPage.baml
+C:\Users\220857\Downloads\UAA14\WPF\6TI_VandervoortAlexandre_Act4_MultiProjet\obj\Debug\net6.0-windows\Vues\PageAccueil.g.cs
+C:\Users\220857\Downloads\UAA14\WPF\6TI_VandervoortAlexandre_Act4_MultiProjet\obj\Debug\net6.0-windows\Vues\PageAccueil.baml

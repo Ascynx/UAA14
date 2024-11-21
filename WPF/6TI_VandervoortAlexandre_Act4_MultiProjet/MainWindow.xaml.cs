@@ -24,9 +24,17 @@ namespace _6TI_VandervoortAlexandre_Act4_MultiProjet
         public MainWindow()
         {
             InitializeComponent();
+            MainFrame.Content = new PageAccueil();
+
+            Accueil.PreviewMouseDown += Accueil_PreviewMouseDown;
             Nav1.PreviewMouseDown += Nav1_PreviewMouseDown;
             Nav2.PreviewMouseDown += Nav2_PreviewMouseDown;
             Nav3.PreviewMouseDown += Nav3_PreviewMouseDown;
+        }
+
+        private void Accueil_PreviewMouseDown(object sender, MouseButtonEventArgs e)
+        {
+            MainFrame.Content = new PageAccueil();
         }
 
         private void Nav3_PreviewMouseDown(object sender, MouseButtonEventArgs e)

@@ -7,10 +7,18 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Vues\PageAccueil.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Vues\ChaletPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vues\PageAccueil.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Vues\TrinomePage.xaml">
