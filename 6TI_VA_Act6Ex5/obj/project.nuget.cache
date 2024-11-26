@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "MssFyqh6LYOrapsLntlXZdhbuI3B1pOCEiFAh/I6wyhoHYiGHPjuZ4OGoJpyLZvBgiREDB8I/pZYZpuZA1n2hQ==",
+  "dgSpecHash": "ihZo8EyICm6pz7WImT84EEc8K9+ibbbJsq8xUZGU+pTLJ5sa4UP1pHEtxEWLTxkav0BbkpwGUKoYsPfRGrFPug==",
   "success": true,
-  "projectFilePath": "C:\\Users\\220857\\Downloads\\UAA14\\6TI_VA_Act6Ex5\\6TI_VA_Act6Ex5.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/home/ascynx/Desktop/csharp/UAA14/6TI_VA_Act6Ex5/6TI_VA_Act6Ex5.csproj",
+  "expectedPackageFiles": [
+    "/home/ascynx/.nuget/packages/microsoft.netcore.app.ref/6.0.30/microsoft.netcore.app.ref.6.0.30.nupkg.sha512",
+    "/home/ascynx/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.30/microsoft.aspnetcore.app.ref.6.0.30.nupkg.sha512",
+    "/home/ascynx/.nuget/packages/microsoft.netcore.app.host.linux-x64/6.0.30/microsoft.netcore.app.host.linux-x64.6.0.30.nupkg.sha512"
+  ],
   "logs": []
 }

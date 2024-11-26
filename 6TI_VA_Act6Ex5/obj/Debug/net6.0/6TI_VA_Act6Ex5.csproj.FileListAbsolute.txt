@@ -1,0 +1,15 @@
+/home/ascynx/Desktop/csharp/UAA14/6TI_VA_Act6Ex5/bin/Debug/net6.0/6TI_VA_Act6Ex5
+/home/ascynx/Desktop/csharp/UAA14/6TI_VA_Act6Ex5/bin/Debug/net6.0/6TI_VA_Act6Ex5.deps.json
+/home/ascynx/Desktop/csharp/UAA14/6TI_VA_Act6Ex5/bin/Debug/net6.0/6TI_VA_Act6Ex5.runtimeconfig.json
+/home/ascynx/Desktop/csharp/UAA14/6TI_VA_Act6Ex5/bin/Debug/net6.0/6TI_VA_Act6Ex5.dll
+/home/ascynx/Desktop/csharp/UAA14/6TI_VA_Act6Ex5/bin/Debug/net6.0/6TI_VA_Act6Ex5.pdb
+/home/ascynx/Desktop/csharp/UAA14/6TI_VA_Act6Ex5/obj/Debug/net6.0/6TI_VA_Act6Ex5.csproj.AssemblyReference.cache
+/home/ascynx/Desktop/csharp/UAA14/6TI_VA_Act6Ex5/obj/Debug/net6.0/6TI_VA_Act6Ex5.GeneratedMSBuildEditorConfig.editorconfig
+/home/ascynx/Desktop/csharp/UAA14/6TI_VA_Act6Ex5/obj/Debug/net6.0/6TI_VA_Act6Ex5.AssemblyInfoInputs.cache
+/home/ascynx/Desktop/csharp/UAA14/6TI_VA_Act6Ex5/obj/Debug/net6.0/6TI_VA_Act6Ex5.AssemblyInfo.cs
+/home/ascynx/Desktop/csharp/UAA14/6TI_VA_Act6Ex5/obj/Debug/net6.0/6TI_VA_Act6Ex5.csproj.CoreCompileInputs.cache
+/home/ascynx/Desktop/csharp/UAA14/6TI_VA_Act6Ex5/obj/Debug/net6.0/6TI_VA_Act6Ex5.dll
+/home/ascynx/Desktop/csharp/UAA14/6TI_VA_Act6Ex5/obj/Debug/net6.0/refint/6TI_VA_Act6Ex5.dll
+/home/ascynx/Desktop/csharp/UAA14/6TI_VA_Act6Ex5/obj/Debug/net6.0/6TI_VA_Act6Ex5.pdb
+/home/ascynx/Desktop/csharp/UAA14/6TI_VA_Act6Ex5/obj/Debug/net6.0/6TI_VA_Act6Ex5.genruntimeconfig.cache
+/home/ascynx/Desktop/csharp/UAA14/6TI_VA_Act6Ex5/obj/Debug/net6.0/ref/6TI_VA_Act6Ex5.dll

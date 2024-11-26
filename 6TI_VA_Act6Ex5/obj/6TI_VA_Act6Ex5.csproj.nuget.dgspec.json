@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\220857\\Downloads\\UAA14\\6TI_VA_Act6Ex5\\6TI_VA_Act6Ex5.csproj": {}
+    "/home/ascynx/Desktop/csharp/UAA14/6TI_VA_Act6Ex5/6TI_VA_Act6Ex5.csproj": {}
   },
   "projects": {
-    "C:\\Users\\220857\\Downloads\\UAA14\\6TI_VA_Act6Ex5\\6TI_VA_Act6Ex5.csproj": {
+    "/home/ascynx/Desktop/csharp/UAA14/6TI_VA_Act6Ex5/6TI_VA_Act6Ex5.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\220857\\Downloads\\UAA14\\6TI_VA_Act6Ex5\\6TI_VA_Act6Ex5.csproj",
+        "projectUniqueName": "/home/ascynx/Desktop/csharp/UAA14/6TI_VA_Act6Ex5/6TI_VA_Act6Ex5.csproj",
         "projectName": "6TI_VA_Act6Ex5",
-        "projectPath": "C:\\Users\\220857\\Downloads\\UAA14\\6TI_VA_Act6Ex5\\6TI_VA_Act6Ex5.csproj",
-        "packagesPath": "C:\\Users\\220857\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\220857\\Downloads\\UAA14\\6TI_VA_Act6Ex5\\obj\\",
+        "projectPath": "/home/ascynx/Desktop/csharp/UAA14/6TI_VA_Act6Ex5/6TI_VA_Act6Ex5.csproj",
+        "packagesPath": "/home/ascynx/.nuget/packages/",
+        "outputPath": "/home/ascynx/Desktop/csharp/UAA14/6TI_VA_Act6Ex5/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\220857\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/ascynx/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -50,12 +48,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.30, 6.0.30]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.linux-x64",
+              "version": "[6.0.30, 6.0.30]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.30, 6.0.30]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.119/RuntimeIdentifierGraph.json"
         }
       }
     }
