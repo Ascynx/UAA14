@@ -127,7 +127,7 @@ namespace _6TI_VA_WPF_Act6_Damiers
         {
             InitializeComponent();
 
-            this.Title = "Damier ex3"
+            this.Title = "Damier ex3";
             this.Width = 660;
             this.Height = 660;
             InitializeBitMap();
