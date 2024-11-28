@@ -47,19 +47,16 @@ namespace _6TI_VA_WPF_Act6_Damiers
                     damier.ColumnDefinitions.Add(column);
                     damier.RowDefinitions.Add(row);
 
-                    
-                    
-                    
-
-                    string num = "" + (x * 10) + y;
+                    string num = "" + (x * 10 + y);
                     TextBlock block = new TextBlock()
                     {
                         Text = num,
                         FontSize = 36,
                         Foreground = Brushes.Red,
                         Background = (y % 2 == 0) == (x % 2 == 0) ? Brushes.White : Brushes.Black,
-                        VerticalAlignment = VerticalAlignment.Center,
-                        HorizontalAlignment = HorizontalAlignment.Center,
+                        VerticalAlignment = VerticalAlignment.Stretch,
+                        HorizontalAlignment = HorizontalAlignment.Stretch,
+                        TextAlignment = TextAlignment.Center,
                     };
                     block.PreviewMouseDown += OnPreviewMouseDown;
 
