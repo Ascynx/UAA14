@@ -47,7 +47,8 @@ namespace _6TI_VA_WPF_Act6_Damiers
                     damier.ColumnDefinitions.Add(column);
                     damier.RowDefinitions.Add(row);
 
-                    string num = "" + (x * 10 + y);
+                    string num = "" + (x * 10 + y + 1);
+
                     TextBlock block = new TextBlock()
                     {
                         Text = num,
