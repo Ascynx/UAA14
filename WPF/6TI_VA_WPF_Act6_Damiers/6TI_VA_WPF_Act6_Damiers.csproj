@@ -9,7 +9,33 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Assets\Images\" />
+    <None Remove="Assets\Images\b.png" />
+    <None Remove="Assets\Images\k.png" />
+    <None Remove="Assets\Images\kn.png" />
+    <None Remove="Assets\Images\p.png" />
+    <None Remove="Assets\Images\q.png" />
+    <None Remove="Assets\Images\t.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Images\b.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\k.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\kn.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\p.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\q.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\t.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>

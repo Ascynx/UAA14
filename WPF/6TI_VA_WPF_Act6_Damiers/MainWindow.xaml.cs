@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,20 +21,155 @@ namespace _6TI_VA_WPF_Act6_Damiers
     /// </summary>
     public partial class MainWindow : Window
     {
+        private static readonly Dictionary<string, BitmapImage> _bitmaps = new();
+
+        private static readonly Dictionary<string, string> _mappings = new()
+            {
+                {
+                    "pawn",
+                    "p.png"
+                },
+                {
+                    "rook",
+                    "t.png"
+                },
+                {
+                    "knight",
+                    "kn.png"
+                },
+                {
+                    "bishop",
+                    "b.png"
+                },
+                {
+                    "queen",
+                    "q.png"
+                },
+                {
+                    "king",
+                    "k.png"
+                }
+            };
+
+        private static readonly Dictionary<int, string> _pawnLocations = new()
+        {
+            {
+                1,
+                "rook"
+            },
+            {
+                2,
+                "knight"
+            },
+            {
+                3,
+                "bishop"
+            },
+            {
+                4,
+                "king"
+            },
+            {
+                5,
+                "queen"
+            },
+            {
+                6,
+                "bishop"
+            },
+            {
+                7,
+                "knight"
+            },
+            {
+                8,
+                "rook"
+            },
+            {
+                10,
+                "pawn"
+            },
+            {
+                11,
+                "pawn"
+            },
+            {
+                12,
+                "pawn"
+            },
+            {
+                13,
+                "pawn"
+            },
+            {
+                14,
+                "pawn"
+            },
+            {
+                15,
+                "pawn"
+            },
+            {
+                16,
+                "pawn"
+            },
+            {
+                17,
+                "pawn"
+            },
+            {
+                18,
+                "pawn"
+            }
+        };
+
         public MainWindow()
         {
             InitializeComponent();
 
+            this.Title = "Damier ex3"
             this.Width = 660;
             this.Height = 660;
+            InitializeBitMap();
             InitializeDynamicComponents();
         }
-        
+
+        public void InitializeBitMap()
+        {
+            
+
+            string[] keys = _mappings.Keys.ToArray();
+            string[] values = _mappings.Values.ToArray();
+            for (int i = 0; i < _mappings.Count; i++)
+            {
+                string key = keys[i];
+                string value = values[i];
+
+                BitmapImage bitmap = new();
+                bitmap.BeginInit();
+                bitmap.UriSource = new Uri("Assets/Images/" + value, UriKind.Relative);
+
+                bitmap.DecodePixelHeight = 65;
+                bitmap.DecodePixelWidth = 65;
+
+                bitmap.EndInit();
+
+                //retire l'ancienne instance (on va le re-decoder).
+                if (_bitmaps.ContainsKey(key))
+                {
+                    _bitmaps.Remove(key);
+                }
+                _bitmaps.Add(key, bitmap);
+            }
+        }
+
         public void InitializeDynamicComponents()
         {
-            for (int x = 0; x < 10; x++)
+            int xMax = 8;
+            int yMax = 8;
+            for (int x = 0; x < xMax; x++)
             {
-                for (int y = 0; y < 10; y++)
+                for (int y = 0; y < yMax; y++)
                 {
                     RowDefinition row = new RowDefinition()
                     {
@@ -47,41 +183,46 @@ namespace _6TI_VA_WPF_Act6_Damiers
                     damier.ColumnDefinitions.Add(column);
                     damier.RowDefinitions.Add(row);
 
-                    string num;
-                    if (x % 2 == 0)
+                    int num = (x * 10 + y + 1);
+                    int max = ((xMax - 1) * 10 + yMax + 1);
+                    if (max - num <= 18)
                     {
-                        num = "" + (x * 10 + y + 1);
+                        num = max - num;
+                    }
+
+                    string? imageKey;
+                    if (num <= 18)
+                    {
+                        _pawnLocations.TryGetValue(num, out imageKey);
+                    } else imageKey = null;
+
+                    BitmapImage? bitmap;
+                    if (imageKey != null)
+                    {
+                        _bitmaps.TryGetValue(imageKey, out bitmap);
                     } else
                     {
-                        num = "" + ((x + 1) * 10 - y);
+                        bitmap = null;
                     }
-                    
-                    TextBlock block = new TextBlock()
+
+                    Button button = new()
                     {
-                        Text = num,
-                        FontSize = 36,
-                        Foreground = Brushes.Red,
-                        Background = (y % 2 == 0) == (x % 2 == 0) ? Brushes.White : Brushes.Black,
                         VerticalAlignment = VerticalAlignment.Stretch,
                         HorizontalAlignment = HorizontalAlignment.Stretch,
-                        TextAlignment = TextAlignment.Center,
+                        Background = (y % 2 == 0) == (x % 2 == 0) ? Brushes.White : Brushes.Black,
                     };
-                    block.PreviewMouseDown += OnPreviewMouseDown;
 
-                    Grid.SetRow(block, x);
-                    Grid.SetColumn(block, y);
+                    Image image = new()
+                    {
+                        Source = bitmap,
+                    };
 
-                    damier.Children.Add(block);
+                    Grid.SetRow(button, x);
+                    Grid.SetColumn(button, y);
+
+                    button.Content = image;
+                    damier.Children.Add(button);
                 }
-            }
-        }
-
-        private void OnPreviewMouseDown(object sender, MouseButtonEventArgs e)
-        {
-            if (sender is TextBlock block)
-            {
-                //on retire le texte.
-                block.Text = "";
             }
         }
     }
