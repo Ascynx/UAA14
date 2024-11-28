@@ -47,18 +47,11 @@ namespace _6TI_VA_WPF_Act6_Damiers
                     damier.ColumnDefinitions.Add(column);
                     damier.RowDefinitions.Add(row);
 
-                    int colN = 10 * x;
-                    int rowN = y;
+                    
+                    
+                    
 
-                    string num;
-                    if ((x + 1) % 2 == 0)
-                    {
-                        num = "" + ((colN + 10) - rowN);
-                    } else
-                    {
-                        num = "" + (colN + rowN);
-                    }
-
+                    string num = "" + (x * 10) + y;
                     TextBlock block = new TextBlock()
                     {
                         Text = num,
@@ -68,11 +61,22 @@ namespace _6TI_VA_WPF_Act6_Damiers
                         VerticalAlignment = VerticalAlignment.Center,
                         HorizontalAlignment = HorizontalAlignment.Center,
                     };
+                    block.PreviewMouseDown += OnPreviewMouseDown;
+
                     Grid.SetRow(block, x);
                     Grid.SetColumn(block, y);
 
                     damier.Children.Add(block);
                 }
+            }
+        }
+
+        private void OnPreviewMouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (sender is TextBlock block)
+            {
+                //on retire le texte.
+                block.Text = "";
             }
         }
     }
