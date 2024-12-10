@@ -6,7 +6,12 @@ namespace _6TI_VA_Act7_CRUD.Models
 {
     internal class BasicModel
     {
-        protected string GetConnString(string database)
+        protected static string GetDefaultDatabase()
+        {
+            return "alexandre";
+        }
+
+        protected static string GetConnString(string database)
         {
             return GetBaseConnString("10.10.51.98", database, 3306, "alexandre", "root");
         }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("6TI_VA_Act7_CRUD")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+47d3336a21eb1cdf915e5d97f88d895cacb6bf0c")]
 [assembly: System.Reflection.AssemblyProductAttribute("6TI_VA_Act7_CRUD")]
 [assembly: System.Reflection.AssemblyTitleAttribute("6TI_VA_Act7_CRUD")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

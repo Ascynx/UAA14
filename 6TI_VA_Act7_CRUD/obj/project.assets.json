@@ -1553,19 +1553,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\220857\\.nuget\\packages\\": {}
+    "C:\\Users\\alexa\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\220857\\Downloads\\UAA14\\6TI_VA_Act7_CRUD\\6TI_VA_Act7_CRUD.csproj",
+      "projectUniqueName": "C:\\Users\\alexa\\Documents\\UAA14\\6TI_VA_Act7_CRUD\\6TI_VA_Act7_CRUD.csproj",
       "projectName": "6TI_VA_Act7_CRUD",
-      "projectPath": "C:\\Users\\220857\\Downloads\\UAA14\\6TI_VA_Act7_CRUD\\6TI_VA_Act7_CRUD.csproj",
-      "packagesPath": "C:\\Users\\220857\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\220857\\Downloads\\UAA14\\6TI_VA_Act7_CRUD\\obj\\",
+      "projectPath": "C:\\Users\\alexa\\Documents\\UAA14\\6TI_VA_Act7_CRUD\\6TI_VA_Act7_CRUD.csproj",
+      "packagesPath": "C:\\Users\\alexa\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\alexa\\Documents\\UAA14\\6TI_VA_Act7_CRUD\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\220857\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\alexa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1585,7 +1590,13 @@
         "warnAsError": [
           "NU1605"
         ]
-      }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net6.0": {
@@ -1612,7 +1623,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
