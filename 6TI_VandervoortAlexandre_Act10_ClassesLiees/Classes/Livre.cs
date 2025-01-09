@@ -12,10 +12,14 @@ namespace _6TI_VandervoortAlexandre_Act10_ClassesLiees.Classes
         private string _auteur;
         private ushort _etat; //5 à 0.
 
+        private bool _empreinte;
+
         public string Titre { get { return _titre; } }
         public string Auteur { get { return _auteur; } }
 
-        public ushort Etat { get { return _etat; } }
+        public ushort Etat { get { return _etat; } set { _etat = value; } }
+
+        public bool Empreinte { get { return _empreinte; } set { _empreinte = value; } }
 
         public Livre(string titre, string auteur, short etat)
         {
@@ -42,7 +46,7 @@ namespace _6TI_VandervoortAlexandre_Act10_ClassesLiees.Classes
         /// <returns></returns>
         public string Description()
         {
-            return $"Titre: {_titre}, Auteur: {_auteur}, état: {_etat}";
+            return $"Titre: {_titre}, Auteur: {_auteur}, état: {_etat}, empreinté: {(_empreinte == true ? "Oui" : "Non")}";
         }
     }
 }

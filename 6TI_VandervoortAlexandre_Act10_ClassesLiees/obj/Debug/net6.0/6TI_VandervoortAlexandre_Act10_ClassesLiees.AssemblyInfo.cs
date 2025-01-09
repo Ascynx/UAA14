@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("6TI_VandervoortAlexandre_Act10_ClassesLiees")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eb5a075742c507eee682ece28e2267f92b0d970d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c8d2c37fcedcde03e6e65456a569507964b37806")]
 [assembly: System.Reflection.AssemblyProductAttribute("6TI_VandervoortAlexandre_Act10_ClassesLiees")]
 [assembly: System.Reflection.AssemblyTitleAttribute("6TI_VandervoortAlexandre_Act10_ClassesLiees")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

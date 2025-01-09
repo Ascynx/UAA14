@@ -11,6 +11,7 @@ namespace _6TI_VandervoortAlexandre_Act10_ClassesLiees.Classes
     internal class Bibliotheque
     {
         private readonly List<Livre> _livres;
+        private readonly List<Empreint> _empreints;
 
         public ImmutableList<Livre> Livres
         {
@@ -20,9 +21,15 @@ namespace _6TI_VandervoortAlexandre_Act10_ClassesLiees.Classes
             }
         }
 
+        public ImmutableList<Empreint> Empreints
+        {
+            get { return _empreints.ToImmutableList(); }
+        }
+
         public Bibliotheque()
         {
             _livres = new List<Livre>();
+            _empreints = new List<Empreint>();
         }
 
         /// <summary>
@@ -35,6 +42,15 @@ namespace _6TI_VandervoortAlexandre_Act10_ClassesLiees.Classes
         }
 
         /// <summary>
+        /// Retire un livre donné de la bibliotheque
+        /// </summary>
+        /// <param name="livre">Le livre à retirer</param>
+        public void Retire(Livre livre)
+        {
+            _livres.Remove(livre);
+        }
+
+        /// <summary>
         /// Supprime les livres abimés de la bibliothèque
         /// </summary>
         public void SupprimeLivresAbimes()
@@ -43,19 +59,46 @@ namespace _6TI_VandervoortAlexandre_Act10_ClassesLiees.Classes
         }
 
         /// <summary>
-        /// Donne tous les livres dans la bibliothèque
+        /// Donne tous les livres dans la bibliothèque ainsi que tous les empreints actuels
         /// </summary>
-        /// <returns>Les infos sur tous les livres de la bibliothèque</returns>
+        /// <returns>Les infos sur tous les livres et tous les empreints de la bibliothèque</returns>
         public string Inventaire()
         {
             StringBuilder sb = new StringBuilder();
 
+            sb.AppendLine("Livres: ");
             for (int i = 0; i < Livres.Count; i++)
             {
                 Livre livre = _livres[i];
                 sb.AppendLine(livre.Description());
             }
+
+            sb.AppendLine("\nEmpreints: ");
+            for (int i = 0; i < Empreints.Count; i++)
+            {
+                Empreint empreint = Empreints[i];
+                sb.AppendLine(empreint.ToString());
+            }
+
             return sb.ToString();
+        }
+
+        public void AjouteEmpreint(Empreint empreint)
+        {
+            if (_livres.Contains(empreint.LivreEmpreinte))
+            {
+                empreint.LivreEmpreinte.Empreinte = true;
+            }
+            Empreints.Add(empreint);
+        }
+
+        public void RetireEmpreint(Empreint empreint)
+        {
+            if (_livres.Contains(empreint.LivreEmpreinte))
+            {
+                empreint.LivreEmpreinte.Empreinte = false;
+            }
+            Empreints.Remove(empreint);
         }
     }
 }
