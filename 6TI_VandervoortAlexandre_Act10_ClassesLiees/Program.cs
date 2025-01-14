@@ -18,7 +18,7 @@ namespace _6TI_VandervoortAlexandre_Act10_ClassesLiees
             PopulateBibli(bibli);
             while (true)
             {
-                int option = Questionneur.QuestionneUtilisateurIntMinMax("Que voulez vous faire?\n 0/ Ajouter un livre\n 1/ Empreinter un livre\n 2/ Rendre un livre\n 3/ Voir l'inventaire", 0, 3);
+                int option = Questionneur.QuestionneUtilisateurIntMinMax("Que voulez vous faire?\n 0/ Ajouter un livre\n 1/ Empreinter un livre\n 2/ Rendre un livre\n 3/ Voir l'inventaire\n 4/ Nettoyage complet", 0, 4);
 
                 switch (option)
                 {
@@ -67,6 +67,13 @@ namespace _6TI_VandervoortAlexandre_Act10_ClassesLiees
                     case 3:
                         {
                             Console.WriteLine(bibli.Inventaire());
+                            break;
+                        }
+                    case 4:
+                        {
+                            bibli.SupprimeLivresAbimes();
+                            Console.WriteLine(bibli.Inventaire());
+                            Console.WriteLine("Retiré les livres dont l'état était détruit (0)");
                             break;
                         }
                     default:
