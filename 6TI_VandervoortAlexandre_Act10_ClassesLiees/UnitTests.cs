@@ -14,12 +14,12 @@ namespace _6TI_VandervoortAlexandre_Act10_ClassesLiees
         {
             Bibliotheque bibliotheque = new Bibliotheque();
 
-            bibliotheque.Ajoute(new Livre("AA", "A1", 5));
-            bibliotheque.Ajoute(new Livre("AB", "A2", 4));
-            bibliotheque.Ajoute(new Livre("AC", "A1", 3));
-            bibliotheque.Ajoute(new Livre("AD", "A3", 2));
-            bibliotheque.Ajoute(new Livre("AE", "A4", 1));
-            bibliotheque.Ajoute(new Livre("AF", "A5", 0));
+            bibliotheque.AjouteLivre(new Livre("AA", "A1", 5));
+            bibliotheque.AjouteLivre(new Livre("AB", "A2", 4));
+            bibliotheque.AjouteLivre(new Livre("AC", "A1", 3));
+            bibliotheque.AjouteLivre(new Livre("AD", "A3", 2));
+            bibliotheque.AjouteLivre(new Livre("AE", "A4", 1));
+            bibliotheque.AjouteLivre(new Livre("AF", "A5", 0));
 
             return bibliotheque;
         }

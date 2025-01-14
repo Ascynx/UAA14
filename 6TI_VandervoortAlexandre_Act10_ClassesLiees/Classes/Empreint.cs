@@ -10,7 +10,7 @@ namespace _6TI_VandervoortAlexandre_Act10_ClassesLiees.Classes
     {
         private Livre _livreEmpreinte;
         private DateTime _dateEmpreint;
-        private string _empreinteur;
+        private Utilisateur _empreinteur;
         private ushort _etatLivre; //avant l'empreint.
 
         public Livre LivreEmpreinte
@@ -19,14 +19,14 @@ namespace _6TI_VandervoortAlexandre_Act10_ClassesLiees.Classes
         }
 
         public DateTime DateEmpreint { get { return _dateEmpreint; } }
-        public string Empreinteur { get { return _empreinteur; } }
+        public Utilisateur Empreinteur { get { return _empreinteur; } }
         public ushort etatLivre { get { return _etatLivre; } }
 
-        public Empreint(Livre livre, DateTime date, string nomEmpreinteur)
+        public Empreint(Livre livre, DateTime date, Utilisateur empreinteur)
         {
             _livreEmpreinte = livre;
             _dateEmpreint = date;
-            _empreinteur = nomEmpreinteur;
+            _empreinteur = empreinteur;
             _etatLivre = livre.Etat;
         }
 

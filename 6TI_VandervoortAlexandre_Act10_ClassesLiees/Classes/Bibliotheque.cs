@@ -36,7 +36,7 @@ namespace _6TI_VandervoortAlexandre_Act10_ClassesLiees.Classes
         /// Ajoute un livre donné dans la liste de livre de cette bibliotheque
         /// </summary>
         /// <param name="livre">Le livre à ajouter</param>
-        public void Ajoute(Livre livre)
+        public void AjouteLivre(Livre livre)
         {
             _livres.Add(livre);
         }
@@ -45,7 +45,7 @@ namespace _6TI_VandervoortAlexandre_Act10_ClassesLiees.Classes
         /// Retire un livre donné de la bibliotheque
         /// </summary>
         /// <param name="livre">Le livre à retirer</param>
-        public void Retire(Livre livre)
+        public void RetireLivre(Livre livre)
         {
             _livres.Remove(livre);
         }
@@ -69,7 +69,7 @@ namespace _6TI_VandervoortAlexandre_Act10_ClassesLiees.Classes
             sb.AppendLine("Livres: ");
             for (int i = 0; i < Livres.Count; i++)
             {
-                Livre livre = _livres[i];
+                Livre livre = Livres[i];
                 sb.AppendLine(livre.Description());
             }
 
@@ -89,7 +89,7 @@ namespace _6TI_VandervoortAlexandre_Act10_ClassesLiees.Classes
             {
                 empreint.LivreEmpreinte.Empreinte = true;
             }
-            Empreints.Add(empreint);
+            _empreints.Add(empreint);
         }
 
         public void RetireEmpreint(Empreint empreint)
@@ -97,8 +97,9 @@ namespace _6TI_VandervoortAlexandre_Act10_ClassesLiees.Classes
             if (_livres.Contains(empreint.LivreEmpreinte))
             {
                 empreint.LivreEmpreinte.Empreinte = false;
+                //si l'état du livre est trop différent de l'état avant empreint, fait des trucs, je ne sais pas.
             }
-            Empreints.Remove(empreint);
+            _empreints.Remove(empreint);
         }
     }
 }
