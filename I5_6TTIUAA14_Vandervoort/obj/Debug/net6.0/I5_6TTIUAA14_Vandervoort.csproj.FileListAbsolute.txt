@@ -1,0 +1,15 @@
+C:\Users\alexa\Documents\UAA14\Exa\POO\I5_6TTIUAA14_Vandervoort\bin\Debug\net6.0\I5_6TTIUAA14_Vandervoort.exe
+C:\Users\alexa\Documents\UAA14\Exa\POO\I5_6TTIUAA14_Vandervoort\bin\Debug\net6.0\I5_6TTIUAA14_Vandervoort.deps.json
+C:\Users\alexa\Documents\UAA14\Exa\POO\I5_6TTIUAA14_Vandervoort\bin\Debug\net6.0\I5_6TTIUAA14_Vandervoort.runtimeconfig.json
+C:\Users\alexa\Documents\UAA14\Exa\POO\I5_6TTIUAA14_Vandervoort\bin\Debug\net6.0\I5_6TTIUAA14_Vandervoort.dll
+C:\Users\alexa\Documents\UAA14\Exa\POO\I5_6TTIUAA14_Vandervoort\bin\Debug\net6.0\I5_6TTIUAA14_Vandervoort.pdb
+C:\Users\alexa\Documents\UAA14\Exa\POO\I5_6TTIUAA14_Vandervoort\obj\Debug\net6.0\I5_6TTIUAA14_Vandervoort.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexa\Documents\UAA14\Exa\POO\I5_6TTIUAA14_Vandervoort\obj\Debug\net6.0\I5_6TTIUAA14_Vandervoort.AssemblyInfoInputs.cache
+C:\Users\alexa\Documents\UAA14\Exa\POO\I5_6TTIUAA14_Vandervoort\obj\Debug\net6.0\I5_6TTIUAA14_Vandervoort.AssemblyInfo.cs
+C:\Users\alexa\Documents\UAA14\Exa\POO\I5_6TTIUAA14_Vandervoort\obj\Debug\net6.0\I5_6TTIUAA14_Vandervoort.csproj.CoreCompileInputs.cache
+C:\Users\alexa\Documents\UAA14\Exa\POO\I5_6TTIUAA14_Vandervoort\obj\Debug\net6.0\I5_6TTIUAA14_Vandervoort.sourcelink.json
+C:\Users\alexa\Documents\UAA14\Exa\POO\I5_6TTIUAA14_Vandervoort\obj\Debug\net6.0\I5_6TTIUAA14_Vandervoort.dll
+C:\Users\alexa\Documents\UAA14\Exa\POO\I5_6TTIUAA14_Vandervoort\obj\Debug\net6.0\refint\I5_6TTIUAA14_Vandervoort.dll
+C:\Users\alexa\Documents\UAA14\Exa\POO\I5_6TTIUAA14_Vandervoort\obj\Debug\net6.0\I5_6TTIUAA14_Vandervoort.pdb
+C:\Users\alexa\Documents\UAA14\Exa\POO\I5_6TTIUAA14_Vandervoort\obj\Debug\net6.0\I5_6TTIUAA14_Vandervoort.genruntimeconfig.cache
+C:\Users\alexa\Documents\UAA14\Exa\POO\I5_6TTIUAA14_Vandervoort\obj\Debug\net6.0\ref\I5_6TTIUAA14_Vandervoort.dll
