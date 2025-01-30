@@ -1,0 +1,15 @@
+C:\Users\alexa\Documents\UAA14\6TI_VA_Act11_ClassesLieesEtHeritages\bin\Debug\net6.0\6TI_VA_Act11_ClassesLieesEtHeritages.exe
+C:\Users\alexa\Documents\UAA14\6TI_VA_Act11_ClassesLieesEtHeritages\bin\Debug\net6.0\6TI_VA_Act11_ClassesLieesEtHeritages.deps.json
+C:\Users\alexa\Documents\UAA14\6TI_VA_Act11_ClassesLieesEtHeritages\bin\Debug\net6.0\6TI_VA_Act11_ClassesLieesEtHeritages.runtimeconfig.json
+C:\Users\alexa\Documents\UAA14\6TI_VA_Act11_ClassesLieesEtHeritages\bin\Debug\net6.0\6TI_VA_Act11_ClassesLieesEtHeritages.dll
+C:\Users\alexa\Documents\UAA14\6TI_VA_Act11_ClassesLieesEtHeritages\bin\Debug\net6.0\6TI_VA_Act11_ClassesLieesEtHeritages.pdb
+C:\Users\alexa\Documents\UAA14\6TI_VA_Act11_ClassesLieesEtHeritages\obj\Debug\net6.0\6TI_VA_Act11_ClassesLieesEtHeritages.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexa\Documents\UAA14\6TI_VA_Act11_ClassesLieesEtHeritages\obj\Debug\net6.0\6TI_VA_Act11_ClassesLieesEtHeritages.AssemblyInfoInputs.cache
+C:\Users\alexa\Documents\UAA14\6TI_VA_Act11_ClassesLieesEtHeritages\obj\Debug\net6.0\6TI_VA_Act11_ClassesLieesEtHeritages.AssemblyInfo.cs
+C:\Users\alexa\Documents\UAA14\6TI_VA_Act11_ClassesLieesEtHeritages\obj\Debug\net6.0\6TI_VA_Act11_ClassesLieesEtHeritages.csproj.CoreCompileInputs.cache
+C:\Users\alexa\Documents\UAA14\6TI_VA_Act11_ClassesLieesEtHeritages\obj\Debug\net6.0\6TI_VA_Act11_ClassesLieesEtHeritages.sourcelink.json
+C:\Users\alexa\Documents\UAA14\6TI_VA_Act11_ClassesLieesEtHeritages\obj\Debug\net6.0\6TI_VA_Act11_ClassesLieesEtHeritages.dll
+C:\Users\alexa\Documents\UAA14\6TI_VA_Act11_ClassesLieesEtHeritages\obj\Debug\net6.0\refint\6TI_VA_Act11_ClassesLieesEtHeritages.dll
+C:\Users\alexa\Documents\UAA14\6TI_VA_Act11_ClassesLieesEtHeritages\obj\Debug\net6.0\6TI_VA_Act11_ClassesLieesEtHeritages.pdb
+C:\Users\alexa\Documents\UAA14\6TI_VA_Act11_ClassesLieesEtHeritages\obj\Debug\net6.0\6TI_VA_Act11_ClassesLieesEtHeritages.genruntimeconfig.cache
+C:\Users\alexa\Documents\UAA14\6TI_VA_Act11_ClassesLieesEtHeritages\obj\Debug\net6.0\ref\6TI_VA_Act11_ClassesLieesEtHeritages.dll
