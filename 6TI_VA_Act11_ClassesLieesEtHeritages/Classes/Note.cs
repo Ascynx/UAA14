@@ -19,5 +19,10 @@ namespace _6TI_VA_Act11_ClassesLieesEtHeritages.Classes
             _note = note;
             _discipline = discipline;
         }
+
+        public override string ToString()
+        {
+            return $"Note: {_note}, discipline: {_discipline}";
+        }
     }
 }

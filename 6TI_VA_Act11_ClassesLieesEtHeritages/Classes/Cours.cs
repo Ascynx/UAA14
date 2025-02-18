@@ -9,7 +9,7 @@ namespace _6TI_VA_Act11_ClassesLieesEtHeritages.Classes
     internal class Cours
     {
         private string _nom;
-        private List<int> _notes;
+        private List<int> _notes = new List<int>();
         private Salle _salle;
 
         public string Nom { get { return _nom; } }
@@ -25,13 +25,23 @@ namespace _6TI_VA_Act11_ClassesLieesEtHeritages.Classes
         public int CalculeMoyenne()
         {
             int tot = 0;
-            int totDiviseur = _notes.Count;
+            int totDiviseur = _notes.Count();
+            if (totDiviseur == 0)
+            {
+                return 0;
+            }
+
             for (int i = 0; i < totDiviseur; i++)
             {
                 tot += _notes[i];
             }
 
             return tot / totDiviseur;
+        }
+
+        public override string ToString()
+        {
+            return $"Nom: {_nom}, salle: {_salle}, moyenne: " + CalculeMoyenne();
         }
     }
 }

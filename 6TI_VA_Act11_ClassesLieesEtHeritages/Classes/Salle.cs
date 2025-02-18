@@ -18,7 +18,11 @@ namespace _6TI_VA_Act11_ClassesLieesEtHeritages.Classes
         {
             _id = id;
             _places = places;
+        }
 
+        public override string ToString()
+        {
+            return $"Id: {_id}, places: {_places}";
         }
     }
 }

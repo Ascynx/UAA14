@@ -40,5 +40,13 @@ namespace _6TI_VA_Act11_ClassesLieesEtHeritages.Classes
             _departements = new List<Departement>();
             _etudiants = new List<Etudiant>();
         }
+
+        public override string ToString()
+        {
+            return "Site: " + _site + "\n"+
+                "Code Ecole: " + _codeEcole + "\n" +
+                "Départements: " + Program.PrintList(_departements) + "\n" +
+                "élèves: " + Program.PrintList(_etudiants) + "\n";
+        }
     }
 }

@@ -23,12 +23,12 @@ namespace _6TI_VA_Act11_ClassesLieesEtHeritages.Classes
         public int CalculeMoyenneGenerale()
         {
             int tot = 0;
-            int denoCommun = 20;
+            int denoCommun = _notes.Count;
             for (int i = 0; i < _notes.Count; i++)
             {
                 tot += _notes[i].Points;
             }
-            return tot / denoCommun;
+            return (tot / denoCommun);
         }
 
         public string GetMatieresNotees()
@@ -44,7 +44,7 @@ namespace _6TI_VA_Act11_ClassesLieesEtHeritages.Classes
 
         public override string ToString()
         {
-            return base.ToString() + $", Annee d'Arrivee: {_anneeArrivee}";
+            return base.ToString() + $", Annee d'Arrivee: {_anneeArrivee}, Moyenne générale: {CalculeMoyenneGenerale()}";
         }
     }
 }

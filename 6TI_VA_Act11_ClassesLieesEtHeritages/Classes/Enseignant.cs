@@ -23,5 +23,13 @@ namespace _6TI_VA_Act11_ClassesLieesEtHeritages.Classes
             _matiere = matiere;
             _disciplines = new List<Cours>();
         }
+
+        public override string ToString()
+        {
+            return base.ToString() + "\n" +
+                "\t\tArrivee: " + _arrivee + "\n" +
+                "\t\tMatiere: " + _matiere.Matiere + "\n" +
+                "\t\tDisciplines: " + Program.PrintList(_disciplines) + "\n";
+        }
     }
 }
