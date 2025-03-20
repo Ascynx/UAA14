@@ -83,6 +83,63 @@ namespace VA6TTI_Act12_ConceptionBar.Classes
                 new("Rhum", 0.4f),
                 new("Sirop", 0.6f)
             }));
+
+            _menu.Add(new Recette("Mojito", new List<Ingredient>
+            {
+                new("Rhum", 0.5f),
+                new("Menthe", 0.1f),
+                new("Eau gazeuse", 0.4f)
+            }));
+
+            _menu.Add(new Recette("Pina Colada", new List<Ingredient>
+            {
+                new("Rhum", 0.3f),
+                new("Lait de coco", 0.3f),
+                new("Jus d'ananas", 0.4f)
+            }));
+
+            _menu.Add(new Recette("Margarita", new List<Ingredient>
+            {
+                new("Tequila", 0.4f),
+                new("Triple Sec", 0.2f),
+                new("Jus de citron vert", 0.4f)
+            }));
+
+            _menu.Add(new Recette("Bloody Mary", new List<Ingredient>
+            {
+                new("Vodka", 0.3f),
+                new("Jus de tomate", 0.6f),
+                new("Citron", 0.1f)
+            }));
+
+            _menu.Add(new Recette("Caipirinha", new List<Ingredient>
+            {
+                new("Cachaça", 0.5f),
+                new("Citron vert", 0.3f),
+                new("Sucre", 0.2f)
+            }));
+
+            // Recettes sans alcool
+            _menu.Add(new Recette("Virgin Mojito", new List<Ingredient>
+            {
+                new("Menthe", 0.2f),
+                new("Eau gazeuse", 0.6f),
+                new("Citron vert", 0.2f)
+            }));
+
+            _menu.Add(new Recette("Smoothie Fraise", new List<Ingredient>
+            {
+                new("Fraise", 0.5f),
+                new("Banane", 0.3f),
+                new("Jus d'orange", 0.2f)
+            }));
+
+            _menu.Add(new Recette("Limonade Maison", new List<Ingredient>
+            {
+                new("Citron", 0.4f),
+                new("Eau", 0.5f),
+                new("Sucre", 0.1f)
+            }));
         }
 
         public void Restocke()
@@ -93,7 +150,7 @@ namespace VA6TTI_Act12_ConceptionBar.Classes
 
         private void ResetCave(ref List<Bouteille> bouteilles)
         {
-            string[] ingredients = { "Vodka", "Rhum", "Tequila", "Gin", "Whisky", "Cognac", "Vermouth", "Triple Sec", "Liqueur", "Soda", "Jus de fruit", "Eau", "Sirop", "Coca", "Jus de citron", "Tonic" };
+            string[] ingredients = { "Vodka", "Rhum", "Tequila", "Gin", "Whisky", "Cognac", "Vermouth", "Triple Sec", "Liqueur", "Soda", "Jus de fruit", "Eau", "Sirop", "Coca", "Jus de citron", "Tonic", "Jus de citron vert", "Jus d'ananas", "Jus d'orange", "Jus de tomate", "Lait de coco", "Eau gazeuse" };
             for (int i = 0; i < ingredients.Length; i++)
             {
                 bouteilles.Add(new Bouteille(new Ingredient(ingredients[i], 1f)));

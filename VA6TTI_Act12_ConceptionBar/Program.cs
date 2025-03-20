@@ -12,7 +12,9 @@ namespace VA6TTI_Act12_ConceptionBar
             Console.WriteLine("Bienvenue au bar! Quel est votre âge?");
             int age = int.Parse(Console.ReadLine());
             Client client = new Client(age);
+            Client client2 = new Client(17);
             Barman barman = new Barman(bar, new Shaker());
+            Barman barman2 = new Barman(bar, new Shaker());
 
             while (true)
             {
