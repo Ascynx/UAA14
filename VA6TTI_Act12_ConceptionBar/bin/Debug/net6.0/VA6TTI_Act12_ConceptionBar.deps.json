@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "VA6TTI_Act12_ConceptionBar/1.0.0": {
+        "runtime": {
+          "VA6TTI_Act12_ConceptionBar.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "VA6TTI_Act12_ConceptionBar/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

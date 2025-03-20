@@ -1,0 +1,15 @@
+C:\Users\alexa\Documents\UAA14\VA6TTI_Act12_ConceptionBar\bin\Debug\net6.0\VA6TTI_Act12_ConceptionBar.exe
+C:\Users\alexa\Documents\UAA14\VA6TTI_Act12_ConceptionBar\bin\Debug\net6.0\VA6TTI_Act12_ConceptionBar.deps.json
+C:\Users\alexa\Documents\UAA14\VA6TTI_Act12_ConceptionBar\bin\Debug\net6.0\VA6TTI_Act12_ConceptionBar.runtimeconfig.json
+C:\Users\alexa\Documents\UAA14\VA6TTI_Act12_ConceptionBar\bin\Debug\net6.0\VA6TTI_Act12_ConceptionBar.dll
+C:\Users\alexa\Documents\UAA14\VA6TTI_Act12_ConceptionBar\bin\Debug\net6.0\VA6TTI_Act12_ConceptionBar.pdb
+C:\Users\alexa\Documents\UAA14\VA6TTI_Act12_ConceptionBar\obj\Debug\net6.0\VA6TTI_Act12_ConceptionBar.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexa\Documents\UAA14\VA6TTI_Act12_ConceptionBar\obj\Debug\net6.0\VA6TTI_Act12_ConceptionBar.AssemblyInfoInputs.cache
+C:\Users\alexa\Documents\UAA14\VA6TTI_Act12_ConceptionBar\obj\Debug\net6.0\VA6TTI_Act12_ConceptionBar.AssemblyInfo.cs
+C:\Users\alexa\Documents\UAA14\VA6TTI_Act12_ConceptionBar\obj\Debug\net6.0\VA6TTI_Act12_ConceptionBar.csproj.CoreCompileInputs.cache
+C:\Users\alexa\Documents\UAA14\VA6TTI_Act12_ConceptionBar\obj\Debug\net6.0\VA6TTI_Act12_ConceptionBar.sourcelink.json
+C:\Users\alexa\Documents\UAA14\VA6TTI_Act12_ConceptionBar\obj\Debug\net6.0\VA6TTI_Act12_ConceptionBar.dll
+C:\Users\alexa\Documents\UAA14\VA6TTI_Act12_ConceptionBar\obj\Debug\net6.0\refint\VA6TTI_Act12_ConceptionBar.dll
+C:\Users\alexa\Documents\UAA14\VA6TTI_Act12_ConceptionBar\obj\Debug\net6.0\VA6TTI_Act12_ConceptionBar.pdb
+C:\Users\alexa\Documents\UAA14\VA6TTI_Act12_ConceptionBar\obj\Debug\net6.0\VA6TTI_Act12_ConceptionBar.genruntimeconfig.cache
+C:\Users\alexa\Documents\UAA14\VA6TTI_Act12_ConceptionBar\obj\Debug\net6.0\ref\VA6TTI_Act12_ConceptionBar.dll
