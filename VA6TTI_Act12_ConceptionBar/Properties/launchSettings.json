@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "VA6TTI_Act12_ConceptionBar": {
+      "commandName": "Project"
+    },
+    "WSL": {
+      "commandName": "WSL2",
+      "distributionName": ""
+    }
+  }
+}

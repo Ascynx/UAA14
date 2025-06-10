@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VA6TTI_Act12_ConceptionBar")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b1028850f61185766db6f475c079390730ec1d44")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0c119580700729914a8d979aa78e478c5747e062")]
 [assembly: System.Reflection.AssemblyProductAttribute("VA6TTI_Act12_ConceptionBar")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VA6TTI_Act12_ConceptionBar")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
